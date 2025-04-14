@@ -77,6 +77,12 @@
 }
 
 /* Icons */
+.example-icon {
+    stroke: var(--black);
+    fill: var(--black);
+    height: 4rem !important;
+    width: 4rem !important;
+}
 .header-nav-icon {
     stroke: currentColor;
     fill: currentColor;
