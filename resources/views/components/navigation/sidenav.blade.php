@@ -1,12 +1,15 @@
 <div id="side-nav-container" class="side-nav dark pt-6 w-44 max-h-full flex">
     <div>
         <a class="side-nav-header flex-col justify-center h-16">
-            <div class="logo w-auto m-2">
-                <img class="max-h-10" src="https://placehold.co/400" alt="Connecto logo">
+            <div class="logo w-auto mx-2">
+                <img class="max-h-10" src="{{ asset('images/logos/white.svg') }}" alt="Primær Logo">
+            </div>
+            <div class="w-auto mx-2">
+            <p class="text-white">- Design Manual</p>
             </div>
         </a>
     </div>
-    <div class="m-2 mt-10 mb-10 flex justify-start max-h-full overflow-y-auto custom-scrollbar-dark">
+    <div class="m-2 mt-5 mb-10 flex justify-start max-h-full overflow-y-auto custom-scrollbar-dark">
         <ul class="">
             <li id="introduction" class="menu-item menu-item-hoverable h-10 px-0 mb-2">
                 <a class="flex h-full w-full px-2 gap-2 items-center  side-nav-list" href="/">
@@ -94,7 +97,7 @@
                 </a>
             </li>
             <li id="buttons" class="menu-item menu-item-hoverable px-0 h-10 mb-2 side-nav-item">
-                <a class="flex w-full px-2 gap-2 items-center  side-nav-list" href="buttons">
+                <a class="flex w-full px-2 gap-2 items-center  side-nav-list" href="/buttons">
                     <p class="side-nav-text">Knapper</p>
                 </a>
             </li>
