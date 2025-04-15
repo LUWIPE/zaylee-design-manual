@@ -1,4 +1,4 @@
-<div id="side-nav-container" class="side-nav dark pt-6 w-44 max-h-full flex">
+<div id="side-nav-container" class="side-nav bg-dark pt-6 ps-2 w-44 max-h-full flex">
     <div>
         <a class="side-nav-header flex-col justify-center h-16">
             <div class="logo w-auto mx-2">
