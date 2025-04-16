@@ -40,24 +40,32 @@
 }
 
 .pagination-icon {
-    stroke: currentColor;
-    fill: currentColor;
+    stroke: var(--dark);
+    fill: var(--dark);
     stroke-width: 2;
-    height: 1em;
-    width: 1em;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .pagination-icon:hover {
     stroke: var(--primary);
     fill: var(--primary);
     stroke-width: 2;
-    height: 1em;
-    width: 1em;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.pagination-icon-disabled {
+    stroke: var(--gray-300);
+    fill: var(--gray-300);
+    stroke-width: 2;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .pagination-icon:disabled {
-    stroke: currentColor;
-    fill: currentColor;
+    stroke: var(--gray-200);
+    fill: var(--gray-200);
     stroke-width: 2;
     height: 1em;
     width: 1em;
