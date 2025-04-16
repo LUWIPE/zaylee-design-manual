@@ -85,6 +85,14 @@
 }
 
 /* Icons */
+.example-icon{
+    stroke: var(--dark);
+    fill: var(--dark);
+    stroke-width: 2;
+    height: 3rem;
+    width: 3rem;
+}
+
 .header-nav-icon {
     stroke: currentColor;
     fill: currentColor;
