@@ -1,5 +1,23 @@
 /* Font */
-@import "https://fonts.adobe.com/fonts/myriad-variable?vf-font-size=100&vf-font=MyriadVF-Roman&vf-instance=Semibold+SemiExtended";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wdth,wght@8..144,112.5,600&display=swap');
+
+body {
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "slnt" 0,
+    "wdth" 112.5,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
 
 /* Colors */
 :root {
@@ -96,7 +114,7 @@ a {
 
 b,
 strong {
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 code,
@@ -291,9 +309,7 @@ video {
 /*noinspection ALL*/
 body {
     background-color: var(--gray-100);
-    font-size: 0.875rem;
     line-height: 1.25rem;
-    font-weight: 500;
     line-height: 1.5;
     color: var(--dark);
 }
@@ -306,7 +322,6 @@ h1,
 .h1 {
     font-size: 2.25rem !important;
     line-height: 2.5rem !important;
-    font-weight: 700 !important;
     color: var(--dark) !important;
 }
 
@@ -314,7 +329,6 @@ h2,
 .h2 {
     font-size: 1.875rem !important;
     line-height: 2.25rem !important;
-    font-weight: 700 !important;
     color: var(--dark) !important;
 }
 
@@ -322,7 +336,6 @@ h3,
 .h3 {
     font-size: 1.5rem !important;
     line-height: 2rem !important;
-    font-weight: 700 !important;
     color: var(--dark) !important;
 }
 
@@ -330,7 +343,6 @@ h4,
 .h4 {
     font-size: 1.25rem !important;
     line-height: 1.75rem !important;
-    font-weight: 700 !important;
     color: var(--dark) !important;
 }
 
@@ -338,7 +350,6 @@ h5,
 .h5 {
     font-size: 1.125rem !important;
     line-height: 1.75rem !important;
-    font-weight: 700 !important;
     color: var(--dark) !important;
 }
 
@@ -346,7 +357,6 @@ h6,
 .h6 {
     font-size: 1rem !important;
     line-height: 1.5rem !important;
-    font-weight: 600 !important;
     color: var(--dark) !important;
 }
 

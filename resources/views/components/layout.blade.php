@@ -3,7 +3,7 @@
 <html lang="da" dir="ltr" class="light custom-scrollbar-black">
 <x-head/>
 <body data-current-page="{{ Route::currentRouteName() }}" class="overflow-y-scroll">
-<div class="app-layout-frameless-side flex flex-auto flex-col bg-gray-950">
+<div class="app-layout-frameless-side flex flex-auto flex-col bg-dark">
     <div class="flex flex-auto min-w-0">
         <x-navigation.sidenav/>
         <div class="min-h-screen min-w-0 relative w-full p-6">
