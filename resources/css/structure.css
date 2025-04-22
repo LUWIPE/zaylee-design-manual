@@ -4,7 +4,7 @@
 body {
     font-family: "Roboto Flex", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     font-variation-settings:
     "slnt" 0,
@@ -22,6 +22,7 @@ body {
 
 /* Colors */
 :root {
+    --white: 255 255 255; /*#ffffff*/
     --light: 255 244 229; /*#fff4e5*/
     --dark: 51 51 51; /*#333333*/
 
@@ -309,7 +310,7 @@ video {
 
 /*noinspection ALL*/
 body {
-    background-color: var(--gray-100);
+    background-color: white;
     line-height: 1.25rem;
     line-height: 1.5;
     color: var(--dark);
