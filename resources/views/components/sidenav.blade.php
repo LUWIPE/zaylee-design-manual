@@ -5,7 +5,7 @@
                 <img class="max-h-10" src="{{ asset('images/logos/white.svg') }}" alt="Primær Logo">
             </div>
             <div class="w-auto mx-2">
-            <p class="text-white">- Design Manual</p>
+            <p class="text-white font-bold">- Design Manual</p>
             </div>
         </a>
     </div>
@@ -61,7 +61,7 @@
             </li>
             <li class="side-nav-divider"></li>
             <li id="links" class="menu-item menu-item-hoverable px-0 h-10 mb-2 side-nav-item">
-            <a class="flex w-full px-2 gap-2 items-center  side-nav-list" href="links">
+            <a class="flex w-full px-2 gap-2 items-center  side-nav-list" href="/links">
                 <p class="side-nav-text">Links</p>
                 </a>
             </li>

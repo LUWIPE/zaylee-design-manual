@@ -5,7 +5,7 @@
 <body data-current-page="{{ Route::currentRouteName() }}" class="overflow-y-scroll">
 <div class="app-layout-frameless-side flex flex-auto flex-col bg-dark">
     <div class="flex flex-auto min-w-0">
-        <x-navigation.sidenav/>
+        <x-sidenav/>
         <div class="min-h-screen min-w-0 relative w-full p-6">
             <div class="bg-white flex flex-col flex-1 h-full rounded-2xl">
                 <div class="h-full flex flex-auto flex-col">
