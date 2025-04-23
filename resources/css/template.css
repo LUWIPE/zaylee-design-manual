@@ -42,7 +42,25 @@
 .avatar-lg {
     height: 3rem;
     width: 3rem;
+    min-width: 3rem;
     line-height: 2.5rem;
+    font-size: 0.75rem;
+}
+
+.avatar-xl {
+    height: 5rem;
+    width: 5rem;
+    min-width: 5rem;
+    line-height: 5rem;
+    font-size: 5rem;
+}
+
+.avatar-normal {
+    height: 10rem;
+    width: 10rem;
+    min-width: 10rem;
+    line-height: 10rem;
+    font-size: 0.75rem;
 }
 
 .avatar-round {
