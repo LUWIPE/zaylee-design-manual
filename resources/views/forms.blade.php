@@ -4,7 +4,7 @@
             <h1>Formularer</h1>
         </div>
         <div class="grid grid-cols-3 gap-4">
-            <x-expamples.card>
+            <x-examples.card>
                 <h3>Definition</h3>
                 <div class="grid gap-2">
                     <p>
@@ -13,8 +13,8 @@
                         og valideringsbeskeder sikrer, at data indtastes korrekt.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Funktionalitet</h3>
                 <div class="grid gap-2">
                     <p>
@@ -24,8 +24,8 @@
                         tydelig besked om, hvorvidt indsendelsen er lykkedes.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Definition</h3>
                 <div class="grid gap-2">
                     <p>
@@ -41,7 +41,7 @@
                         Fejlmeddelelser og validering vises tydeligt.
                     </p>
                 </div>
-            </x-expamples.card>
+            </x-examples.card>
         </div>
     </div>
 </x-layout>

@@ -4,7 +4,7 @@
             <h1>Links</h1>
         </div>
         <div class="grid grid-cols-3 gap-4">
-            <x-expamples.card>
+            <x-examples.card>
                 <h3>Definition</h3>
                 <div class="grid gap-2">
                     <p>
@@ -13,8 +13,8 @@
                         funktioner i systemet.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Funktionalitet</h3>
                 <div class="grid gap-2">
                     <p>
@@ -24,8 +24,8 @@
                         interaktivt.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Designprincipper</h3>
                 <div class="grid gap-2">
                     <p>
@@ -43,7 +43,7 @@
                         Link‑tekster skal klart angive destinationen (fx “Download rapport” i stedet for “Klik her”).
                     </p>
                 </div>
-            </x-expamples.card>
+            </x-examples.card>
         </div>
     </div>
 </x-layout>

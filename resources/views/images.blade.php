@@ -4,7 +4,7 @@
             <h1>Billeder</h1>
         </div>
         <div class="grid grid-cols-3 gap-4">
-            <x-expamples.card>
+            <x-examples.card>
                 <h3>Definition</h3>
                 <div class="grid gap-2">
                     <p>
@@ -16,8 +16,8 @@
                         et visuelt sammenhængende udtryk.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Funktionalitet</h3>
                 <div class="grid gap-2">
                     <p>
@@ -29,8 +29,8 @@
                         formater uden at forstyrre brugerens navigation eller læseoplevelse.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Designprincipper</h3>
                 <div class="grid gap-2">
                     <p>
@@ -47,9 +47,9 @@
                     </p>
 
                 </div>
-            </x-expamples.card>
+            </x-examples.card>
         </div>
-        <x-expamples.card>
+        <x-examples.card>
             <div class="grid gap-2">
                 <h3>Profilbilleder</h3>
                 <table class="table table-default table-border table-compact">
@@ -158,6 +158,6 @@
                     </tbody>
                 </table>
             </div>
-        </x-expamples.card>
+        </x-examples.card>
     </div>
 </x-layout>

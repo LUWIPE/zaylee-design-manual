@@ -4,7 +4,7 @@
             <h1>Ikoner</h1>
         </div>
         <div class="grid grid-cols-3 gap-4">
-            <x-expamples.card>
+            <x-examples.card>
                 <h3>Definition</h3>
                 <div class="grid gap-2">
                     <p>
@@ -13,8 +13,8 @@
                         navigation. Samtidig skaber de visuel konsistens og reducerer behovet for forklarende tekst.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Funktionalitet</h3>
                 <div class="grid gap-2">
                     <p>
@@ -25,8 +25,8 @@
                         for at sikre genkendelighed og effektiv interaktion.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Designprincipper</h3>
                 <div class="grid gap-2">
                     <p>
@@ -51,13 +51,13 @@
                         I interaktive elementer (som knapper eller links) kan ikoner reagere på brugerens handlinger.
                     </p>
                 </div>
-            </x-expamples.card>
+            </x-examples.card>
         </div>
-        <x-expamples.card>
+        <x-examples.card>
             <div class="grid grid-cols-12 gap-4 items-center justify-center">
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon">
-                        <x-expamples.icons.account/>
+                        <x-examples.icons.account/>
                     </div>
                     <div>
                         <p class="text-center">Selskab</p>
@@ -65,7 +65,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon">
-                        <x-expamples.icons.profile/>
+                        <x-examples.icons.profile/>
                     </div>
                     <div>
                         <p class="text-center">Profil</p>
@@ -73,7 +73,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon">
-                        <x-expamples.icons.employee/>
+                        <x-examples.icons.employee/>
                     </div>
                     <div>
                         <p class="text-center">Medarbejdere</p>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon">
-                        <x-expamples.icons.home/>
+                        <x-examples.icons.home/>
                     </div>
                     <div>
                         <p class="text-center">Hjem</p>
@@ -89,7 +89,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon">
-                        <x-expamples.icons.customer/>
+                        <x-examples.icons.customer/>
                     </div>
                     <div>
                         <p class="text-center">Kunder</p>
@@ -106,7 +106,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon flex justify-center items-center">
-                        <x-expamples.icons.cadastre/>
+                        <x-examples.icons.cadastre/>
                     </div>
                     <div>
                         <p class="text-center">Matrikel</p>
@@ -114,7 +114,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon flex justify-center items-center">
-                        <x-expamples.icons.placement/>
+                        <x-examples.icons.placement/>
                     </div>
                     <div>
                         <p class="text-center">Placering</p>
@@ -122,7 +122,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon flex justify-center items-center">
-                        <x-expamples.icons.quote/>
+                        <x-examples.icons.quote/>
                     </div>
                     <div>
                         <p class="text-center">Tilbud</p>
@@ -139,7 +139,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon flex justify-center items-center">
-                        <x-expamples.icons.lines/>
+                        <x-examples.icons.lines/>
                     </div>
                     <div>
                         <p class="text-center">Linjer</p>
@@ -147,7 +147,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon flex justify-center items-center">
-                        <x-expamples.icons.case/>
+                        <x-examples.icons.case/>
                     </div>
                     <div>
                         <p class="text-center">Sager</p>
@@ -155,7 +155,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon flex justify-center items-center">
-                        <x-expamples.icons.service/>
+                        <x-examples.icons.service/>
                     </div>
                     <div>
                         <p class="text-center">Service</p>
@@ -172,7 +172,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon flex justify-center items-center">
-                        <x-expamples.icons.planning/>
+                        <x-examples.icons.planning/>
                     </div>
                     <div>
                         <p class="text-center">Planlægning</p>
@@ -180,7 +180,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon flex justify-center items-center">
-                        <x-expamples.icons.job/>
+                        <x-examples.icons.job/>
                     </div>
                     <div>
                         <p class="text-center">Job</p>
@@ -188,7 +188,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon flex justify-center items-center">
-                        <x-expamples.icons.timetracking/>
+                        <x-examples.icons.timetracking/>
                     </div>
                     <div>
                         <p class="text-center">Tidsregistrering</p>
@@ -196,7 +196,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon flex justify-center items-center">
-                        <x-expamples.icons.equipment/>
+                        <x-examples.icons.equipment/>
                     </div>
                     <div>
                         <p class="text-center">Udstyr</p>
@@ -213,7 +213,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon flex justify-center items-center">
-                        <x-expamples.icons.subtask/>
+                        <x-examples.icons.subtask/>
                     </div>
                     <div>
                         <p class="text-center">Delopgave</p>
@@ -221,7 +221,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon flex justify-center items-center">
-                        <x-expamples.icons.subscription/>
+                        <x-examples.icons.subscription/>
                     </div>
                     <div>
                         <p class="text-center">Abonnement</p>
@@ -229,7 +229,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon flex justify-center items-center">
-                        <x-expamples.icons.economy/>
+                        <x-examples.icons.economy/>
                     </div>
                     <div>
                         <p class="text-center">Økonomi</p>
@@ -237,7 +237,7 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon flex justify-center items-center">
-                        <x-expamples.icons.invoice/>
+                        <x-examples.icons.invoice/>
                     </div>
                     <div>
                         <p class="text-center">Faktura</p>
@@ -245,13 +245,13 @@
                 </div>
                 <div class="flex flex-col items-center">
                     <div class="border border-black p-2 example-icon flex justify-center items-center">
-                        <x-expamples.icons.notification/>
+                        <x-examples.icons.notification/>
                     </div>
                     <div>
                         <p class="text-center">Notifikation</p>
                     </div>
                 </div>
             </div>
-        </x-expamples.card>
+        </x-examples.card>
     </div>
 </x-layout>

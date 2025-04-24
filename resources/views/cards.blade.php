@@ -4,7 +4,7 @@
             <h1>Cards</h1>
         </div>
         <div class="grid grid-cols-3 gap-4">
-            <x-expamples.card>
+            <x-examples.card>
                 <h3>Definition</h3>
                 <div class="grid gap-2">
                     <p>
@@ -13,8 +13,8 @@
                         for brugeren at navigere i indholdet på en intuitiv måde.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Funktionalitet</h3>
                 <div class="grid gap-2">
                     <p>
@@ -24,8 +24,8 @@
                         markerer, at kortet er interaktivt.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Designprincipper</h3>
                 <div class="grid gap-2">
                     <p>
@@ -42,7 +42,7 @@
                         Hover‑ og klikområder understreger, at kortet kan interageres med.
                     </p>
                 </div>
-            </x-expamples.card>
+            </x-examples.card>
         </div>
     </div>
 </x-layout>

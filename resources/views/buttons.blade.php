@@ -4,7 +4,7 @@
             <h1 class="mt-4">Knapper</h1>
         </div>
         <div class="grid grid-cols-3 gap-4">
-            <x-expamples.card>
+            <x-examples.card>
                 <h3>Definition</h3>
                 <p>
                     Knapper er en vigtig interaktiv komponent, der bruges til at udføre handlinger i applikationen. De
@@ -13,8 +13,8 @@
                     kan tilpasses med forskellige farver, der hjælper med at kommunikere knappens funktion og prioritet
                     i brugergrænsefladen.
                 </p>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Funktionalitet</h3>
                 <p>
                     Knapperne udløser handlinger, når brugeren interagerer med dem. De er opbygget som en genanvendelig
@@ -37,8 +37,8 @@
                     <span class="font-black">-</span> <span class="font-extrabold">$type</span>
                     hvor man kan vælge hvilken funktion knappen har
                 </p>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Designprincipper</h3>
                 <p>
                     <span class="font-extrabold">Klart visuelt hierarki:</span> Farverne på knapperne hjælper med at
@@ -54,34 +54,34 @@
                     feedback, f.eks. en ændring i farve eller en animation ved hover, så brugeren tydeligt kan se, når
                     knappen er klikbar.
                 </p>
-            </x-expamples.card>
+            </x-examples.card>
         </div>
-        <x-expamples.card>
+        <x-examples.card>
             <h3 class="mb-2">Eksempler</h3>
             <div class="grid gap-4">
                 <div>
                     <h5>x-buttons.filled</h5>
                     <div class="grid grid-cols-6 gap-4">
-                        <x-expamples.buttons.filled color="primary"/>
-                        <x-expamples.buttons.filled color="secondary"/>
-                        <x-expamples.buttons.filled color="info"/>
-                        <x-expamples.buttons.filled color="success"/>
-                        <x-expamples.buttons.filled color="warning"/>
-                        <x-expamples.buttons.filled color="error"/>
+                        <x-examples.buttons.filled color="primary"/>
+                        <x-examples.buttons.filled color="secondary"/>
+                        <x-examples.buttons.filled color="info"/>
+                        <x-examples.buttons.filled color="success"/>
+                        <x-examples.buttons.filled color="warning"/>
+                        <x-examples.buttons.filled color="error"/>
                     </div>
                 </div>
                 <div>
                     <h5>x-buttons.outline</h5>
                     <div class="grid grid-cols-6 gap-4">
-                        <x-expamples.buttons.outline color="primary"/>
-                        <x-expamples.buttons.outline color="secondary"/>
-                        <x-expamples.buttons.outline color="info"/>
-                        <x-expamples.buttons.outline color="success"/>
-                        <x-expamples.buttons.outline color="warning"/>
-                        <x-expamples.buttons.outline color="error"/>
+                        <x-examples.buttons.outline color="primary"/>
+                        <x-examples.buttons.outline color="secondary"/>
+                        <x-examples.buttons.outline color="info"/>
+                        <x-examples.buttons.outline color="success"/>
+                        <x-examples.buttons.outline color="warning"/>
+                        <x-examples.buttons.outline color="error"/>
                     </div>
                 </div>
             </div>
-        </x-expamples.card>
+        </x-examples.card>
     </div>
 </x-layout>

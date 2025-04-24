@@ -4,14 +4,14 @@
             <h1 class="mt-4">Typografi</h1>
         </div>
         <div class="grid grid-cols-3 gap-4">
-            <x-expamples.card>
+            <x-examples.card>
                 <h3>Definition</h3>
                 <p>Den primære skrifttype i systemet er Roboto Flex fra Google Fonts. Det er en moderne, variabel
                     skrifttype, der giver stor fleksibilitet i udtryk gennem justerbar vægt, bredde og hældning. Roboto
                     Flex sikrer høj læsbarhed og gør det muligt at skabe et ensartet og professionelt udtryk på tværs af
                     platforme og skærmstørrelser.</p>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Funktionalitet</h3>
                 <p>
                     Som variabel skrifttype er der mulighed for præcis justering af blandt andet vægt og hældning,
@@ -19,8 +19,8 @@
                     en ensartet og professionel typografi, samtidig med at læsbarheden bevares på tværs af formater og
                     anvendelser.
                 </p>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Designprincipper</h3>
                 <div class="grid gap-2">
                     <p>
@@ -32,9 +32,9 @@
                         Typografiens vægt og hældning tilpasses efter behov, alt efter kontekst og visuelt hierarki.
                     </p>
                 </div>
-            </x-expamples.card>
+            </x-examples.card>
         </div>
-        <x-expamples.card>
+        <x-examples.card>
             <div class="grid gap-2">
                 <h3>Størrelser</h3>
                 <table class="table table-default table-border table-compact">
@@ -90,8 +90,8 @@
                     </tbody>
                 </table>
             </div>
-        </x-expamples.card>
-        <x-expamples.card>
+        </x-examples.card>
+        <x-examples.card>
             <div class="grid gap-2">
                 <h3>Fontvægt</h3>
                 <table class="table table-default table-border table-compact">
@@ -159,8 +159,8 @@
                     </tbody>
                 </table>
             </div>
-        </x-expamples.card>
-        <x-expamples.card>
+        </x-examples.card>
+        <x-examples.card>
             <div class="grid gap-2">
                 <h3>Tekstfarver</h3>
                 <div class="grid grid-cols-6 gap-4">
@@ -207,6 +207,6 @@
                     <p class="text-black">Black</p>
                 </div>
             </div>
-        </x-expamples.card>
+        </x-examples.card>
     </div>
 </x-layout>
