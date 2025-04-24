@@ -4,7 +4,7 @@
             <h1>Paginering</h1>
         </div>
         <div class="grid grid-cols-3 gap-4">
-            <x-expamples.card>
+            <x-examples.card>
                 <h3>Definition</h3>
                 <div class="grid gap-2">
                     <p>
@@ -16,8 +16,8 @@
                         databaser eller lange lister.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Funktionalitet</h3>
                 <div class="grid gap-2">
                     <p>
@@ -29,8 +29,8 @@
                         sikrer en ensartet og effektiv navigationsoplevelse i alle relevante sektioner.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Designprincipper</h3>
                 <div class="grid gap-2">
                     <p>
@@ -49,9 +49,9 @@
                         paginering, hvilket forbedrer brugerens engagement og interaktion.
                     </p>
                 </div>
-            </x-expamples.card>
+            </x-examples.card>
         </div>
-    <x-expamples.card>
+    <x-examples.card>
     <div class="pagination mt-3 flex align-middle justify-center gap-5 h-12">
         <div class="pagination-pager-prev me-3">
             <button class="pagination-icon-disabled flex items-center">
@@ -67,6 +67,6 @@
             </button>
         </div>
     </div>
-    </x-expamples.card>
+    </x-examples.card>
     </div>
 </x-layout>

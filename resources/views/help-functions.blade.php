@@ -4,7 +4,7 @@
             <h1>Hjælpefunktioner</h1>
         </div>
         <div class="grid grid-cols-3 gap-4">
-            <x-expamples.card>
+            <x-examples.card>
                 <h3>Definition</h3>
                 <div class="grid gap-2">
                     <p>
@@ -13,8 +13,8 @@
                         funktioner eller handlinger fungerer.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Funktionalitet</h3>
                 <div class="grid gap-2">
                     <p>
@@ -24,8 +24,8 @@
                         informationstekster i forbindelse med komplekse funktioner.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Designprincipper</h3>
                 <div class="grid gap-2">
                     <p>
@@ -45,12 +45,12 @@
                         Hjælpefunktioner guider, men overtager ikke brugerens kontrol.
                     </p>
                 </div>
-            </x-expamples.card>
+            </x-examples.card>
         </div>
-        <x-expamples.card>
+        <x-examples.card>
             <div class="grid gap-4">
                 <div class="bg-gray-100 border-2 border-dark p-2 rounded-full example-icon">
-                    <x-expamples.icons.questionmark/>
+                    <x-examples.icons.questionmark/>
                 </div>
                 <div class="card bg-gray-100 border-2 border-dark w-96">
                     <div class="card-body">
@@ -60,6 +60,6 @@
                     </div>
                 </div>
             </div>
-        </x-expamples.card>
+        </x-examples.card>
     </div>
 </x-layout>

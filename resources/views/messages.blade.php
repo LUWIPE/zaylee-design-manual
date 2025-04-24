@@ -4,7 +4,7 @@
             <h1>Beskeder</h1>
         </div>
         <div class="grid grid-cols-3 gap-4">
-            <x-expamples.card>
+            <x-examples.card>
                 <h3>Definition</h3>
                 <div class="grid gap-2">
                     <p>
@@ -15,8 +15,8 @@
                         informerede valg og hurtigt rette eventuelle fejl.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Funktionalitet</h3>
                 <div class="grid gap-2">
                     <p>
@@ -27,8 +27,8 @@
                         der mangler input, som i “Udfyld alle påkrævede felter”.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Designprincipper</h3>
                 <div class="grid gap-2">
                     <p>
@@ -48,9 +48,9 @@
                         generelle beskeder.
                     </p>
                 </div>
-            </x-expamples.card>
+            </x-examples.card>
         </div>
-        <x-expamples.card>
+        <x-examples.card>
             <div class="grid gap-2">
 
                 <table class="table table-default table-border table-compact">
@@ -68,7 +68,7 @@
                         <tr class="table-row">
                             <td class="align-middle"><pre><code>{{ $message }}</code></pre></td>
                             <td class="align-top">
-                                <x-expamples.pop-ups.messages :message="$message"/>
+                                <x-examples.pop-ups.messages :message="$message"/>
                             </td>
                         </tr>
                     @endforeach
@@ -76,6 +76,6 @@
                 </table>
 
             </div>
-        </x-expamples.card>
+        </x-examples.card>
     </div>
 </x-layout>

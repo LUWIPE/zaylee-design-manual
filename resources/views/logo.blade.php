@@ -4,7 +4,7 @@
             <h1>Logo</h1>
         </div>
         <div class="grid grid-cols-3 gap-4">
-            <x-expamples.card>
+            <x-examples.card>
                 <h3>Definition</h3>
                 <div class="grid gap-2">
                     <p>
@@ -15,8 +15,8 @@
                         farveanvendes, samt hvilke ændringer der ikke er tilladt.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Funktionalitet</h3>
                 <div class="grid gap-2">
                     <p>
@@ -27,8 +27,8 @@
                         navigation – uden at fungere som et interaktivt element.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Designprincipper</h3>
                 <div class="grid gap-2">
                     <p>
@@ -48,9 +48,9 @@
                         Kun de officielle brandfarver må bruges.
                     </p>
                 </div>
-            </x-expamples.card>
+            </x-examples.card>
         </div>
-        <x-expamples.card>
+        <x-examples.card>
             <div class="grid gap-2">
                 <h3>Logo</h3>
                 <div class="grid grid-cols-3 gap-4">
@@ -74,8 +74,8 @@
                     </div>
                 </div>
             </div>
-        </x-expamples.card>
-        <x-expamples.card>
+        </x-examples.card>
+        <x-examples.card>
             <div class="grid gap-2">
                 <h3>Logo-ikon</h3>
                 <div class="grid grid-cols-5 gap-4">
@@ -96,6 +96,6 @@
                     </div>
                 </div>
             </div>
-        </x-expamples.card>
+        </x-examples.card>
     </div>
 </x-layout>

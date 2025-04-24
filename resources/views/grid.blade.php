@@ -4,7 +4,7 @@
             <h1>Grid</h1>
         </div>
         <div class="grid grid-cols-3 gap-4">
-            <x-expamples.card>
+            <x-examples.card>
                 <h3>Definition</h3>
                 <div class="grid gap-2">
                     <p>
@@ -15,8 +15,8 @@
                         giver en brugervenlig og tilgængelig design på tværs af forskellige enheder.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Funktionalitet</h3>
                 <div class="grid gap-2">
                     <p>
@@ -29,8 +29,8 @@
                         afstand mellem elementerne.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Designprincipper</h3>
                 <div class="grid gap-2">
                     <p>
@@ -49,9 +49,9 @@
                         god balance mellem indhold og hvidt rum.
                     </p>
                 </div>
-            </x-expamples.card>
+            </x-examples.card>
         </div>
-        <x-expamples.card>
+        <x-examples.card>
             <div class="grid gap-2">
                 <h3>grid-cols-</h3>
                 <table class="table table-fixed table-default table-border table-compact w-full">
@@ -81,8 +81,8 @@
                     </tbody>
                 </table>
             </div>
-        </x-expamples.card>
-        <x-expamples.card>
+        </x-examples.card>
+        <x-examples.card>
             <div class="grid gap-2">
                 <h3>col-span-</h3>
                 <table class="table table-fixed table-default table-border table-compact w-full">
@@ -115,6 +115,6 @@
                     </tbody>
                 </table>
             </div>
-        </x-expamples.card>
+        </x-examples.card>
     </div>
 </x-layout>

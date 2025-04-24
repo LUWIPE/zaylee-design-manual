@@ -4,7 +4,7 @@
             <h1 class="mt-4">Farver</h1>
         </div>
         <div class="grid grid-cols-3 gap-4">
-            <x-expamples.card>
+            <x-examples.card>
                 <h3>Definition</h3>
                 <p>
                     Systemet bygger på et sæt nøje udvalgte farver, der skaber en visuel identitet og støtter
@@ -13,16 +13,16 @@
                     fleksibilitet til forskellige situationer som hover-effekter, inaktive tilstande og kontrast i lyse
                     eller mørke layouts.
                 </p>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Funktionalitet</h3>
                 <p>
                     Farverne i designet er ikke blot visuelle elementer, men spiller en vigtig rolle i at formidle
                     funktion, betydning og brugerens interaktion med systemet. Hver farvekategori har en specifik rolle,
                     som bidrager til at skabe tydelighed, genkendelighed og en intuitiv brugeroplevelse.
                 </p>
-            </x-expamples.card>
-            <x-expamples.card>
+            </x-examples.card>
+            <x-examples.card>
                 <h3>Designprincipper</h3>
                 <div class="grid gap-2">
                     <p>
@@ -41,9 +41,9 @@
                         tekst eller form).
                     </p>
                 </div>
-            </x-expamples.card>
+            </x-examples.card>
         </div>
-        <x-expamples.card>
+        <x-examples.card>
             <div class="grid gap-2">
                 <h3>Baggrundsfarver</h3>
                 <p>
@@ -78,8 +78,8 @@
                     </p>
                 </div>
             </div>
-        </x-expamples.card>
-        <x-expamples.card>
+        </x-examples.card>
+        <x-examples.card>
             <div class="grid gap-2">
                 <h3>Temafarver</h3>
                 <div class="grid gap-2">
@@ -153,8 +153,8 @@
                     </div>
                 </div>
             </div>
-        </x-expamples.card>
-        <x-expamples.card>
+        </x-examples.card>
+        <x-examples.card>
             <div class="grid gap-2">
                 <h3>Gråtoner</h3>
                 <p>
@@ -203,8 +203,8 @@
                     </div>
                 </div>
             </div>
-        </x-expamples.card>
-        <x-expamples.card>
+        </x-examples.card>
+        <x-examples.card>
             <div class="grid gap-2">
                 <h3>Tailwind farver</h3>
                 <p>
@@ -218,6 +218,6 @@
                     </a>
                 </p>
             </div>
-        </x-expamples.card>
+        </x-examples.card>
     </div>
 </x-layout>

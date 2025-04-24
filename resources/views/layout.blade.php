@@ -4,7 +4,7 @@
             <h1>Layout</h1>
         </div>
         <div class="grid grid-cols-3 gap-4">
-            <x-expamples.card>
+            <x-examples.card>
                 <h3>Definition</h3>
                 <div class="grid gap-2">
                     <p>
@@ -16,8 +16,8 @@
                         design.
                     </p>
                 </div>
-            </x-expamples.card>
-            <x-expamples.card class="col-span-2">
+            </x-examples.card>
+            <x-examples.card class="col-span-2">
                 <h3>Struktur</h3>
                 <div class="grid gap-2">
                     <p>
@@ -39,26 +39,26 @@
                         klart og struktureret for en god brugeroplevelse.
                     </p>
                 </div>
-            </x-expamples.card>
+            </x-examples.card>
         </div>
-        <x-expamples.card>
+        <x-examples.card>
             <div class="grid gap-2">
                 <div class="grid gap-2">
                     <h3>Header</h3>
                 </div>
             </div>
-        </x-expamples.card>
-        <x-expamples.card>
+        </x-examples.card>
+        <x-examples.card>
             <div class="grid gap-2">
                 <div class="grid gap-2">
                     <h3>Sidenav</h3>
                 </div>
             </div>
-        </x-expamples.card>
-        <x-expamples.card>
+        </x-examples.card>
+        <x-examples.card>
             <div class="grid gap-2">
                 <h3>Sidenav</h3>
             </div>
-        </x-expamples.card>
+        </x-examples.card>
     </div>
 </x-layout>
