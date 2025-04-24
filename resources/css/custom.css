@@ -93,6 +93,14 @@
     width: 3rem;
 }
 
+.message-icon{
+        stroke: currentColor;
+        fill: currentColor;
+        stroke-width: 2;
+        height: 1.25rem;
+        width: 1.25rem;
+}
+
 .header-nav-icon {
     stroke: currentColor;
     fill: currentColor;
