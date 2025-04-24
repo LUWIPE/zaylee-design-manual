@@ -1,3 +1,53 @@
 <x-layout>
-
+    <div class="grid gap-4">
+        <div>
+            <h1>Beskeder</h1>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+            <x-expamples.card>
+                <h3>Definition</h3>
+                <div class="grid gap-2">
+                    <p>
+                        Beskeder som succes-, advarsels- og fejlbeskeder bruges til at give brugeren tydelig feedback på
+                        handlinger i applikationen. De formidler, om en opgave er fuldført korrekt, om der er forhold,
+                        som kræver brugerens vurdering, eller om en proces er mislykket og skal rettes. Denne løbende
+                        statusinformation gør det nemt for brugeren at forstå, hvad der sker i systemet, træffe
+                        informerede valg og hurtigt rette eventuelle fejl.
+                    </p>
+                </div>
+            </x-expamples.card>
+            <x-expamples.card>
+                <h3>Funktionalitet</h3>
+                <div class="grid gap-2">
+                    <p>
+                        Applikationen benytter tre slags systembeskeder til at guide brugeren. Succesbeskeder bekræfter,
+                        at en handling er fuldført korrekt, som når der står “Data er gemt”. Advarselsbeskeder gør
+                        opmærksom på forhold, der kan kræve brugerens vurdering uden at være kritiske fejl, fx “Du er
+                        ved at slette en post”. Fejlbeskeder fortæller, at en handling ikke kan gennemføres, eller at
+                        der mangler input, som i “Udfyld alle påkrævede felter”.
+                    </p>
+                </div>
+            </x-expamples.card>
+            <x-expamples.card>
+                <h3>Designprincipper</h3>
+                <div class="grid gap-2">
+                    <p>
+                        <span class="font-bold">Farvekodning:</span>
+                        Bruges til at skelne mellem beskedtyper.
+                        <span class="text-success">Success</span> for succes,
+                        <span class="text-warning">warning</span> for advarsler og
+                        <span class="text-error">error</span> for fejl.
+                    </p>
+                    <p>
+                        <span class="font-bold">Tydelighed:</span>
+                        Beskederne skal være korte, præcise og synlige.
+                    </p>
+                    <p>
+                        <span class="font-bold">Placering:</span>
+                        De vises som regel tæt på det element, de relaterer sig til – eller i toppen af siden ved generelle beskeder.
+                    </p>
+                </div>
+            </x-expamples.card>
+        </div>
+    </div>
 </x-layout>
