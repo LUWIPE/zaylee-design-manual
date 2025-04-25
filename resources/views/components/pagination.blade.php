@@ -35,5 +35,4 @@
             <x-examples.icons.chevron-right/>
         </button>
     </div>
-
 </div>
