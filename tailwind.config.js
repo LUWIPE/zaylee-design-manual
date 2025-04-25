@@ -1,4 +1,5 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
+import {safelist} from "./safelist.config.js";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -38,5 +39,6 @@ export default {
             }
         },
     },
+    safelist: safelist,
     plugins: [],
 };
