@@ -93,6 +93,14 @@
     width: 3rem;
 }
 
+.help-function-icon{
+        stroke: currentColor;
+        fill: currentColor;
+        stroke-width: 2;
+        height: 1.5rem;
+        width: 1.5rem;
+}
+
 .message-icon{
         stroke: currentColor;
         fill: currentColor;
