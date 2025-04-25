@@ -52,33 +52,26 @@
             </x-examples.card>
         </div>
         <x-examples.card>
-            <div x-data="{ page: 1, minPage: 1, totalPages: 10 }"
-                 class="pagination mt-3 flex align-middle justify-center gap-5 h-12">
-                <div class="pagination-pager-prev me-3">
-                    <button
-                        x-bind:disabled="page === minPage"
-                        x-on:click="page--"
-                        x-cloak
-                        class="pagination-icon"
-                        x-bind:class="page !== minPage ? 'hover:fill-primary hover:stroke-primary' : ''"
-                    >
-                        <x-examples.icons.chevron-left/>
-                    </button>
-                </div>
-                <div class="flex align-middle justify-center gap-1 h-6 border-2 border-transparent w-24">
-                    <p>Side <span x-text="page"></span> af <span x-text="totalPages"></span></p>
-                </div>
-                <div class="pagination-pager-next ms-3 flex items-center">
-                    <button
-                        x-bind:disabled="page === totalPages"
-                        x-on:click="page++"
-                        x-cloak
-                        class="pagination-icon"
-                        x-bind:class="page !== totalPages ? 'hover:fill-primary hover:stroke-primary' : ''"
-                    >
-                        <x-examples.icons.chevron-right/>
-                    </button>
-                </div>
+            <div class="grid gap-2">
+                <h3>Eksempler</h3>
+                <table class="table table-default table-border table-compact">
+                    <thead>
+                    <tr class="table-row">
+                        <th class="align-middle w-3/12">Type</th>
+                        <th class="align-middle w-9/12">Eksempel</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="table-row">
+                        <td class="align-middle">
+                            <pre><code>x-pagination</code></pre>
+                        </td>
+                        <td class="align-middle">
+                            <x-pagination/>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </x-examples.card>
     </div>
