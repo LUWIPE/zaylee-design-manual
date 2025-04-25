@@ -51,22 +51,35 @@
                 </div>
             </x-examples.card>
         </div>
-    <x-examples.card>
-    <div class="pagination mt-3 flex align-middle justify-center gap-5 h-12">
-        <div class="pagination-pager-prev me-3">
-            <button class="pagination-icon-disabled flex items-center">
-                <x-icons.chevron-left/>
-            </button>
-        </div>
-        <div class="flex align-middle gap-3 ">
-            <p class="pagination-text">Side <span id="pageOf">1</span> af 10</p>
-        </div>
-        <div class="pagination-pager-next ms-3 flex items-center">
-            <button class="pagination-icon">
-                <x-icons.chevron-right/>
-            </button>
-        </div>
-    </div>
-    </x-examples.card>
+        <x-examples.card>
+            <div x-data="{ page: 1, minPage: 1, totalPages: 10 }"
+                 class="pagination mt-3 flex align-middle justify-center gap-5 h-12">
+                <div class="pagination-pager-prev me-3">
+                    <button
+                        x-bind:disabled="page === minPage"
+                        x-on:click="page--"
+                        x-cloak
+                        class="pagination-icon"
+                        x-bind:class="page !== minPage ? 'hover:fill-primary hover:stroke-primary' : ''"
+                    >
+                        <x-examples.icons.chevron-left/>
+                    </button>
+                </div>
+                <div class="flex align-middle justify-center gap-1 h-6 border-2 border-transparent w-24">
+                    <p>Side <span x-text="page"></span> af <span x-text="totalPages"></span></p>
+                </div>
+                <div class="pagination-pager-next ms-3 flex items-center">
+                    <button
+                        x-bind:disabled="page === totalPages"
+                        x-on:click="page++"
+                        x-cloak
+                        class="pagination-icon"
+                        x-bind:class="page !== totalPages ? 'hover:fill-primary hover:stroke-primary' : ''"
+                    >
+                        <x-examples.icons.chevron-right/>
+                    </button>
+                </div>
+            </div>
+        </x-examples.card>
     </div>
 </x-layout>
