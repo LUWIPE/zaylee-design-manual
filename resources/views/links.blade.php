@@ -45,5 +45,36 @@
                 </div>
             </x-examples.card>
         </div>
+        <x-examples.card>
+            <div class="grid gap-2">
+                <h3>Eksempler</h3>
+                <table class="table table-default table-border table-compact">
+                    <thead>
+                    <tr class="table-row">
+                        <th class="align-middle w-3/12">Type</th>
+                        <th class="align-middle w-9/12">Eksempel</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="table-row">
+                        <td>
+                            <pre><code>hover:underline</code></pre>
+                        </td>
+                        <td>
+                            <a href="#" class="hover:underline">Link</a>
+                        </td>
+                    </tr>
+                    <tr class="table-row">
+                        <td>
+                            <pre><code>hover:text-primary</code></pre>
+                        </td>
+                        <td>
+                            <a href="#" class="hover:text-primary">Link</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </x-examples.card>
     </div>
 </x-layout>
