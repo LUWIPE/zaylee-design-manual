@@ -10,6 +10,7 @@
             <div class="bg-white flex flex-col flex-1 h-full rounded-2xl">
                 <div class="h-full flex flex-auto flex-col">
                     <div class="h-full flex flex-auto flex-col justify-between rounded-2xl">
+                        <x-header/>
                         <div class="page-container relative h-full flex flex-auto flex-col px-4 sm:px-6 py-4 sm:py-6 md:px-8">
                             <div class="container mx-auto">
                                 {{$slot}}

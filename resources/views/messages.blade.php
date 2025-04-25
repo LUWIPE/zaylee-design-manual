@@ -34,9 +34,9 @@
                     <p>
                         <span class="font-bold">Farvekodning:</span>
                         Bruges til at skelne mellem beskedtyper.
-                        <span class="text-success">Success</span> for succes,
-                        <span class="text-warning">warning</span> for advarsler og
-                        <span class="text-error">error</span> for fejl.
+                        <span class="text-success bg-success">farve</span> for succes,
+                        <span class="text-warning bg-warning">farve</span> for advarsler og
+                        <span class="text-error bg-error">farve</span> for fejl.
                     </p>
                     <p>
                         <span class="font-bold">Tydelighed:</span>
@@ -52,29 +52,36 @@
         </div>
         <x-examples.card>
             <div class="grid gap-2">
-
                 <table class="table table-default table-border table-compact">
                     <thead>
                     <tr class="table-row">
                         <th>Type</th>
-                        <th>Eksempel</th>
+                        <th colspan="2">Eksempel</th>
                     </tr>
                     </thead>
                     <tbody>
                     @php
-                    $messages = ['success', 'warning', 'error'];
+                        $messages = ['success', 'warning', 'error'];
                     @endphp
                     @foreach($messages as $message)
                         <tr class="table-row">
-                            <td class="align-middle"><pre><code>{{ $message }}</code></pre></td>
-                            <td class="align-top">
+                            <td class="align-middle w-2/12">
+                                <pre><code>{{ $message }}</code></pre>
+                            </td>
+                            <td class="align-middle w-9/12">
                                 <x-examples.pop-ups.messages :message="$message"/>
+                            </td>
+                            <td class="align-middle w-1/12">
+                                <x-examples.buttons.filled
+                                    text="Vis"
+                                    :color="$message"
+                                    :onclick="'let el = document.getElementById(\'message-' . $message . '\'); el.classList.remove(\'hidden\'); setTimeout(() => el.classList.add(\'hidden\'), 3000)'"
+                                />
                             </td>
                         </tr>
                     @endforeach
                     </tbody>
                 </table>
-
             </div>
         </x-examples.card>
     </div>
