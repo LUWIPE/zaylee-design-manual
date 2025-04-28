@@ -2,5 +2,5 @@
     class="button bg-transparent border-2 border-{{ $color }} hover:border-{{ $color }}-light text-{{ $text ?? $color }}  hover:text-{{ $color }}-light h-12 rounded-lg px-5 py-2 button-press-feedback"
     type="{{ $type ?? 'button' }}"
 >
-    Knap
+    <p class="text-lg">{{ $text ?? $color }}</p>
 </button>
