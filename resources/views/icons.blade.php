@@ -54,25 +54,73 @@
             </x-examples.card>
         </div>
         <x-examples.card>
-            <div class="grid grid-cols-8 gap-4 items-center justify-center">
-                @php
-                    $icons = File::files(resource_path('views/components/examples/icons'));
-                @endphp
-
-                @foreach($icons as $icon)
+            <div class="grid gap-2">
+                <h3>Eksempler</h3>
+                <div class="grid grid-cols-8 gap-4 items-center justify-center">
                     @php
-                        $iconName = str_replace('.blade.php', '', $icon->getFilename());
+                        $icons = File::files(resource_path('views/components/examples/icons'));
                     @endphp
 
-                    <div class="flex flex-col items-center">
-                        <div class="border border-black p-2 example-icon">
-                            <x-dynamic-component :component="'examples.icons.' . $iconName"/>
+                    @foreach($icons as $icon)
+                        @php
+                            $iconName = str_replace('.blade.php', '', $icon->getFilename());
+                        @endphp
+
+                        <div class="flex flex-col items-center">
+                            <div class="border border-black p-2 example-icon">
+                                <x-dynamic-component :component="'examples.icons.' . $iconName"/>
+                            </div>
+                            <div>
+                                <pre><p><<code class="text-center text-xs">x-icons.{{ $iconName }}</code>/></p></pre>
+                            </div>
                         </div>
-                        <div>
-                            <pre><p><<code class="text-center text-xs">x-icons.{{ $iconName }}</code>/></p></pre>
+                    @endforeach
+                </div>
+            </div>
+        </x-examples.card>
+        <x-examples.card>
+            <div class="grid gap-2">
+                <h3>Interaktioner</h3>
+                <table class="table table-default table-border table-compact">
+                    <thead>
+                    <tr class="table-row">
+                        <th class="align-middle w-3/12">Type</th>
+                        <th class="align-middle w-9/12">Eksempel</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="table-row">
+                        <td class="align-middle">
+                            <p>Hover: Skift farve</p>
+                        </td>
+                        <td>
+                            <div class="example-icon p-3 hover:fill-info hover:stroke-info">
+                                <x-examples.icons.edit/>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="align-middle">
+                            <p>Hover: Skift baggrund</p>
+                        </td>
+                        <td>
+                        <div class="example-icon p-3 rounded-full hover:bg-gray-200">
+                            <x-examples.icons.edit/>
                         </div>
-                    </div>
-                @endforeach
+                        </td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="align-middle">
+                            <p>Hover: Skift farve og baggrund</p>
+                        </td>
+                        <td>
+                        <div class="example-icon p-3 rounded-full hover:bg-primary hover:fill-white hover:stroke-white">
+                            <x-examples.icons.edit/>
+                        </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </x-examples.card>
     </div>
