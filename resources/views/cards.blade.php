@@ -44,5 +44,82 @@
                 </div>
             </x-examples.card>
         </div>
+        <x-examples.card.border>
+            <x-examples.card.body>
+                <h3>Eksempler</h3>
+                <table class="table table-default table-border table-compact">
+                    <thead>
+                    <tr class="table-row">
+                        <th class="align-middle w-3/12">Type</th>
+                        <th class="align-middle w-9/12">Eksempel</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="table-row">
+                        <td class="align-middle">
+                            <p>Simpel</p>
+                        </td>
+                        <td>
+                            <x-examples.card.border>
+                                <x-examples.card.body>
+                                    <h3>Overskrift</h3>
+                                    <p>Indhold</p>
+                                </x-examples.card.body>
+                            </x-examples.card.border>
+                        </td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="align-middle">
+                            <p>Header</p>
+                        </td>
+                        <td>
+                            <x-examples.card.border>
+                                <x-examples.card.header>
+                                    <h3>Overskrift</h3>
+                                </x-examples.card.header>
+                                <x-examples.card.body>
+                                    <p>Indhold</p>
+                                </x-examples.card.body>
+                            </x-examples.card.border>
+                        </td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="align-middle">
+                            <p>Footer</p>
+                        </td>
+                        <td>
+                            <x-examples.card.border>
+                                <x-examples.card.body>
+                                    <h3>Overskrift</h3>
+                                    <p>Indhold</p>
+                                </x-examples.card.body>
+                                <x-examples.card.footer>
+                                    <p>Footer indhold</p>
+                                </x-examples.card.footer>
+                            </x-examples.card.border>
+                        </td>
+                    </tr>
+                    <tr class="table-row">
+                        <td class="align-middle">
+                            <p>Header + Footer</p>
+                        </td>
+                        <td>
+                            <x-examples.card.border>
+                                <x-examples.card.header>
+                                    <h3>Overskrift</h3>
+                                </x-examples.card.header>
+                                <x-examples.card.body>
+                                    <p>Indhold</p>
+                                </x-examples.card.body>
+                                <x-examples.card.footer>
+                                    <p>Footer indhold</p>
+                                </x-examples.card.footer>
+                            </x-examples.card.border>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </x-examples.card.body>
+        </x-examples.card.border>
     </div>
 </x-layout>
