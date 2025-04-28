@@ -1,3 +1,23 @@
+@php
+    $tabs = [
+        [
+            'name' => 'tab 1',
+            'headings' => ['th 1.1', 'th 1.2'],
+            'data' => [
+                ['td1.1 - 1', 'td 1.2 - 1'],
+                ['td2.1 - 1', 'td 2.2 - 1'],
+            ],
+        ],
+        [
+            'name' => 'tab 2',
+            'headings' => ['th 2.1', 'th 2.2'],
+            'data' => [
+                ['td 1.1 - 2', 'td 1.2 - 2'],
+                ['td 2.1 - 2', 'td 2.2 - 2'],
+            ],
+        ],
+    ];
+@endphp
 <x-layout>
     <div class="grid gap-4">
         <div>
@@ -38,7 +58,7 @@
                             <pre><code><<span>x-lists.tabs</span>/></code></pre>
                         </td>
                         <td>
-                            <x-examples.lists.tabs/>
+                            <x-examples.lists.tabs :$tabs/>
                         </td>
                     </tr>
                     </tbody>
