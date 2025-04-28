@@ -38,7 +38,7 @@
                 </a>
             </li>
             <li id="images" class="menu-item menu-item-hoverable px-0 h-10 mb-2 side-nav-item">
-                <a class="flex h-full w-full px-2 gap-2 items-center  side-nav-list" href="/images">
+                <a class="flex h-full w-full px-2 gap-2 items-center  side-nav-list" href="/img">
                     <p class="side-nav-text">Billeder</p>
                 </a>
             </li>

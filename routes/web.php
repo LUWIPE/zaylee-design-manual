@@ -22,7 +22,7 @@ Route::get('/icons', function () {
     return view('icons');
 });
 
-Route::get('/images', function () {
+Route::get('/img', function () {
     return view('images');
 });
 
