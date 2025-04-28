@@ -3,5 +3,5 @@
     type="{{ $type ?? 'button' }}"
     onclick="{{ $onclick ?? '' }}"
 >
-    {{ $text ?? $color }}
+    <p class="text-lg">{{ $text ?? $color }}</p>
 </button>

@@ -1,3 +1,6 @@
+@php
+    $colors = ['primary', 'secondary', 'info', 'success', 'warning', 'error'];
+@endphp
 <x-layout>
     <div class="grid gap-4">
         <div>
@@ -57,28 +60,45 @@
             </x-examples.card>
         </div>
         <x-examples.card>
-            <h3 class="mb-2">Eksempler</h3>
+            <h3 class="mb-2">Normale Knapper</h3>
             <div class="grid gap-4">
                 <div>
                     <h5>x-buttons.filled</h5>
+                    <p></p>
                     <div class="grid grid-cols-6 gap-4">
-                        <x-examples.buttons.filled color="primary"/>
-                        <x-examples.buttons.filled color="secondary"/>
-                        <x-examples.buttons.filled color="info"/>
-                        <x-examples.buttons.filled color="success"/>
-                        <x-examples.buttons.filled color="warning"/>
-                        <x-examples.buttons.filled color="error"/>
+                        @foreach($colors as $color)
+                            <x-examples.buttons.filled color="{{ $color }}"/>
+                        @endforeach
                     </div>
                 </div>
                 <div>
                     <h5>x-buttons.outline</h5>
                     <div class="grid grid-cols-6 gap-4">
-                        <x-examples.buttons.outline color="primary"/>
-                        <x-examples.buttons.outline color="secondary"/>
-                        <x-examples.buttons.outline color="info"/>
-                        <x-examples.buttons.outline color="success"/>
-                        <x-examples.buttons.outline color="warning"/>
-                        <x-examples.buttons.outline color="error"/>
+                        @foreach($colors as $color)
+                            <x-examples.buttons.outline color="{{ $color }}"/>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </x-examples.card>
+        <x-examples.card>
+            <h3 class="mb-2">Små Knapper</h3>
+            <div class="grid gap-4">
+
+                <div>
+                    <h5>x-buttons.filled</h5>
+                    <div class="grid grid-cols-6 gap-4">
+                        @foreach($colors as $color)
+                            <x-examples.buttons.filled-sm color="{{ $color }}"/>
+                        @endforeach
+                    </div>
+                </div>
+                <div>
+                    <h5>x-buttons.outline</h5>
+                    <div class="grid grid-cols-6 gap-4">
+                        @foreach($colors as $color)
+                            <x-examples.buttons.outline-sm color="{{ $color }}"/>
+                        @endforeach
                     </div>
                 </div>
             </div>
