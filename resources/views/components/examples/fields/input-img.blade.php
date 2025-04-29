@@ -7,13 +7,13 @@
             accept=".png, .jpg"
             {{ $attributes }}
         >
-        <div class="my-16 text-center ">
-            <div class="text-6xl mb-4 flex justify-center">
-                <x-icons.img-upload/>
+        <div class="my-16 text-center w-full flex flex-col items-center justify-center">
+            <div class="mb-4 flex items-center justify-center h-14">
+                <x-examples.icons.img-upload/>
             </div>
             <p class="font-semibold">
-                <span class="text-gray-800">Træk dit {{ $imgName ?? 'logo'  }} herhen, eller</span>
-                <span class="text-blue-500">søg</span>
+                <span class="text-dark">Træk dit {{ $imgName ?? 'logo'  }} herhen, eller</span>
+                <span class="text-info">søg</span>
             </p>
             <p class="mt-1 opacity-60">Godtager: .jpeg og .png</p>
         </div>
