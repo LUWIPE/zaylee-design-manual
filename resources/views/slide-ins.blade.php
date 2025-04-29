@@ -60,7 +60,6 @@
                     </tr>
                     </tbody>
                 </table>
-
             </x-examples.card.body>
         </x-examples.card.border>
     </div>
