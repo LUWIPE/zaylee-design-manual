@@ -24,7 +24,46 @@
             <h1>Lister</h1>
         </div>
         <div class="grid grid-cols-3 gap-4">
-            <x-examples.card></x-examples.card>
+            <x-examples.card.border>
+                <x-examples.card.body>
+                    <h3>Definition</h3>
+                    <p>
+                        Lister er strukturerede visninger af data organiseret i rækker og kolonner. De giver
+                        mulighed for at præsentere information på en systematisk og let sammenlignelig måde, hvilket gør
+                        dem velegnede til at vise større mængder data på en kompakt og overskuelig måde. Tabellister
+                        bruges ofte i administrative og datatunge grænseflader.
+                    </p>
+                </x-examples.card.body>
+            </x-examples.card.border>
+            <x-examples.card.border>
+                <x-examples.card.body>
+                    <h3>Funktionalitet</h3>
+                    <p>
+                        Lister bruges til at vise information som f.eks. brugere, opgaver, dokumenter eller sagsdata. De
+                        gør det muligt for brugeren at få overblik, identificere mønstre og sammenligne information på
+                        tværs af rækker. Funktioner som søgning, sortering, filtrering og pagination gør det lettere at
+                        navigere i store mængder data. Tabeller kan også indeholde klikbare rækker eller knapper, der
+                        fører til yderligere detaljer eller handlinger.
+                    </p>
+                </x-examples.card.body>
+            </x-examples.card.border>
+            <x-examples.card.border>
+                <x-examples.card.body>
+                    <h3>Designprincipper</h3>
+                    <p>
+                        <span class="font-bold">Overskuelighed:</span>
+                        Kolonner og rækker skal være lette at aflæse, med passende afstand og justering.
+                    </p>
+                    <p>
+                        <span class="font-bold">Interaktivitet:</span>
+                        Brug af hover-effekter, klikbare rækker eller ikoner skal tydeligt signaleres.
+                    </p>
+                    <p>
+                        <span class="font-bold">Konsistens:</span>
+                        Lister er opbygget som komponent og følger derfor samme opbygning og stil gennem hele systemet
+                    </p>
+                </x-examples.card.body>
+            </x-examples.card.border>
         </div>
         <x-examples.card>
             <div class="grid gap-2">
