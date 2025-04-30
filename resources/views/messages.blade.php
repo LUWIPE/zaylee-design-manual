@@ -50,8 +50,9 @@
                 </div>
             </x-examples.card>
         </div>
-        <x-examples.card>
-            <div class="grid gap-2">
+        <x-examples.card.border>
+            <x-examples.card.body>
+                <h3>Overordnede beskeder</h3>
                 <table class="table table-default table-border table-compact">
                     <thead>
                     <tr class="table-row">
@@ -63,6 +64,7 @@
                     @php
                         $messages = ['success', 'warning', 'error'];
                     @endphp
+
                     @foreach($messages as $message)
                         <tr class="table-row">
                             <td class="align-middle w-2/12">
@@ -75,14 +77,62 @@
                                 <x-examples.buttons.filled
                                     text="Vis"
                                     :color="$message"
-                                    :onclick="'let el = document.getElementById(\'message-' . $message . '\'); el.classList.remove(\'hidden\'); setTimeout(() => el.classList.add(\'hidden\'), 3000)'"
+                                    @click="show('{{ $message }}')"
                                 />
                             </td>
                         </tr>
                     @endforeach
                     </tbody>
                 </table>
-            </div>
-        </x-examples.card>
+            </x-examples.card.body>
+        </x-examples.card.border>
+        <x-examples.card.border>
+            <x-examples.card.body>
+                <h3>Element specifikke beskeder</h3>
+                <div x-data="{ activeMessage: null }">
+                    <table class="table table-default table-border table-compact">
+                        <thead>
+                        <tr class="table-row">
+                            <th>Type</th>
+                            <th colspan="2">Eksempel</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @php
+                            $messages = ['success', 'warning', 'error'];
+                            $messageText = [
+                                'success' => 'Handlingen blev gennemført',
+                                'warning' => 'Feltet skal indeholde mindst et stort bogstav',
+                                'error' => 'Feltet skal udfyldes',
+                            ];
+                        @endphp
+
+                        @foreach($messages as $message)
+                            <tr class="table-row">
+                                <td class="align-middle w-2/12">
+                                    <pre><code>{{ $message }}</code></pre>
+                                </td>
+                                <td class="align-middle w-9/12">
+                                    <x-examples.fields.input label="Test" name="test"/>
+                                    <div x-show="activeMessage === '{{ $message }}'" class="mt-1">
+                                        <p class="text-{{ $message }}">
+                                            {{ $messageText[$message] }}
+                                        </p>
+                                    </div>
+                                </td>
+                                <td class="align-middle w-1/12">
+                                    <x-examples.buttons.filled
+                                        text="Submit"
+                                        :color="$message"
+                                        @click="activeMessage = '{{ $message }}'"
+                                    />
+                                </td>
+                            </tr>
+                        @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </x-examples.card.body>
+        </x-examples.card.border>
     </div>
 </x-layout>

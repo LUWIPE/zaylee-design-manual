@@ -2,7 +2,25 @@
     <!doctype html>
 <html lang="da" dir="ltr" class="light custom-scrollbar-black">
 <x-head/>
-<body x-data="{ slideWithoutBackdrop: false, slideWithBackdrop: false }" data-current-page="{{ Route::currentRouteName() }}" class="h-screen">
+<body
+    x-data="{
+        slideWithoutBackdrop: false,
+        slideWithBackdrop: false,
+        messages: [],
+        show(type) {
+            const id = Date.now() + Math.random();
+            if (this.messages.length >= 5) {
+            this.messages.shift();
+            }
+            this.messages.push({ id, type });
+            setTimeout(() => {
+                this.messages = this.messages.filter(m => m.id !== id);
+            }, 3000);
+        }
+    }"
+    data-current-page="{{ Route::currentRouteName() }}"
+    class="h-screen"
+>
 <div class="app-layout-frameless-side flex flex-auto flex-col bg-dark h-full">
     <div class="flex flex-auto min-w-0 h-full">
         <x-sidenav/>
@@ -20,9 +38,31 @@
                                 </div>
                             </div>
                         </div>
-                        <x-examples.slide-ins.no-backdrop :open-ref="'slideWithoutBackdrop'" />
-
-                        <x-examples.slide-ins.backdrop :open-ref="'slideWithBackdrop'" />
+                        <x-examples.slide-ins.no-backdrop :open-ref="'slideWithoutBackdrop'"/>
+                        <x-examples.slide-ins.backdrop :open-ref="'slideWithBackdrop'"/>
+                        <div class="absolute bottom-10 right-10 flex flex-col gap-2 items-end">
+                            <template x-for="message in messages" :key="message.id">
+                                <div
+                                    x-transition:enter="transition ease-out duration-300"
+                                    x-transition:enter-start="opacity-0 translate-y-2"
+                                    x-transition:enter-end="opacity-100 translate-y-0"
+                                    x-transition:leave="transition ease-in duration-300"
+                                    x-transition:leave-start="opacity-100 translate-y-0"
+                                    x-transition:leave-end="opacity-0 translate-y-2"
+                                    class="w-96"
+                                >
+                                    <template x-if="message.type === 'success'">
+                                        <x-examples.pop-ups.messages width="96" message="success" />
+                                    </template>
+                                    <template x-if="message.type === 'warning'">
+                                        <x-examples.pop-ups.messages width="96" message="warning" />
+                                    </template>
+                                    <template x-if="message.type === 'error'">
+                                        <x-examples.pop-ups.messages width="96" message="error" />
+                                    </template>
+                                </div>
+                            </template>
+                        </div>
                     </div>
                 </div>
             </div>
