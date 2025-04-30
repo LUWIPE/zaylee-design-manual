@@ -52,7 +52,7 @@
         </div>
         <x-examples.card.border>
             <x-examples.card.body>
-                <h3>Overordnede beskeder</h3>
+                <h3>Generelle beskeder</h3>
                 <table class="table table-default table-border table-compact">
                     <thead>
                     <tr class="table-row">
