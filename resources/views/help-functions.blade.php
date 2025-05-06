@@ -47,8 +47,8 @@
                 </div>
             </x-examples.card>
         </div>
-        <x-examples.card>
-            <div class="grid gap-2">
+        <x-examples.card.border>
+            <x-examples.card.body>
                 <h3>Eksempler</h3>
                 <table class="table table-default table-border table-compact">
                     <thead>
@@ -60,23 +60,26 @@
                     <tbody>
                     <tr class="table-row">
                         <td class="align-middle">
-                            <p>Infobox</p>
+                            <p>x-info-box</p>
                         </td>
                         <td>
-                            <x-examples.help-functions.info-box/>
+                            <x-examples.help-functions.info-box text="Dette er en hjælpende tekst, der forklarer funktionen."/>
                         </td>
                     </tr>
                     <tr class="table-row">
                         <td class="align-middle">
-                            <p>Tooltip (hover)</p>
+                            <p>x-tooltip (hover)</p>
                         </td>
                         <td>
-                            <x-examples.help-functions.tooltip/>
+                            <x-examples.help-functions.tooltip text="Dette er en hjælpende tekst, der forklarer funktionen. Den vises ved hover og forsvinder igen."/>
                         </td>
                     </tr>
                     </tbody>
                 </table>
-            </div>
-        </x-examples.card>
+            </x-examples.card.body>
+            <x-examples.card.footer class="bg-dark">
+                <pre><code class="language-html code-block">{{ html_entity_decode(view('code-blocks.help-functions')->render()) }}</code></pre>
+            </x-examples.card.footer>
+        </x-examples.card.border>
     </div>
 </x-layout>

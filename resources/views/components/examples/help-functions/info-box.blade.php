@@ -5,7 +5,7 @@
                 <x-examples.icons.info/>
             </div>
             <p>
-                Dette er en hjælpende tekst, der forklarer funktionen.
+                {{ $text }}
             </p>
         </div>
     </div>
