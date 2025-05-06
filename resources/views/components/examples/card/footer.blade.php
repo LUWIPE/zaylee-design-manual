@@ -1,3 +1,3 @@
-<div class="card-footer card-footer-border">
+<div {{ $attributes->class(['card-footer', 'card-footer-border']) }}>
     {{ $slot }}
 </div>
