@@ -93,8 +93,7 @@
                 </div>
             </x-examples.card.body>
             <x-examples.card.footer class="bg-dark">
-                <pre><code
-                        class="language-html code-block">{{ html_entity_decode(view('code-blocks.logo')->render()) }}</code></pre>
+                <pre><code class="language-html code-block">{{ html_entity_decode(view('code-blocks.logo')->render()) }}</code></pre>
             </x-examples.card.footer>
         </x-examples.card.border>
         <x-examples.card.border>
@@ -136,8 +135,7 @@
                 </div>
             </x-examples.card.body>
             <x-examples.card.footer class="bg-dark">
-                <pre><code
-                        class="language-html code-block">{{ html_entity_decode(view('code-blocks.logo-icon')->render()) }}</code></pre>
+                <pre><code class="language-html code-block">{{ html_entity_decode(view('code-blocks.logo-icon')->render()) }}</code></pre>
             </x-examples.card.footer>
         </x-examples.card.border>
     </div>
