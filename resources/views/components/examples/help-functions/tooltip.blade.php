@@ -21,7 +21,7 @@
         <div class="bg-white rounded-lg shadow-lg">
             <div class="bg-info bg-opacity-5 border border-info rounded-lg p-2 text-info">
                 <p>
-                    Dette er en hjælpende tekst, der forklarer funktionen. Den vises ved hover og forsvinder igen.
+                    {{ $text }}
                 </p>
             </div>
         </div>
