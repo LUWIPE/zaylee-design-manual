@@ -3,5 +3,5 @@
     type="{{ $type ?? 'button' }}"
     {{ $attributes }}
 >
-    <p class="text-xs">{{ $text ?? $color }}</p>
+    <p class="text-xs">{{ $text}}</p>
 </button>

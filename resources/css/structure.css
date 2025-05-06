@@ -98,6 +98,10 @@ body:is(.dark *) {
     color: var(--gray-400);
 }
 
+.code-block {
+    background-color: var(--dark) !important;
+}
+
 hr {
     height: 0;
     color: inherit;
