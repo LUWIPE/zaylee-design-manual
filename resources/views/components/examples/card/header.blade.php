@@ -1,3 +1,3 @@
 <div class="card-header card-header-border">
-{{ $slot }}
+    {{ $slot }}
 </div>
