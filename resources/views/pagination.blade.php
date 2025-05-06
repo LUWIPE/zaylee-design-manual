@@ -51,28 +51,34 @@
                 </div>
             </x-examples.card>
         </div>
-        <x-examples.card>
-            <div class="grid gap-2">
-                <h3>Eksempler</h3>
-                <table class="table table-default table-border table-compact">
-                    <thead>
-                    <tr class="table-row">
-                        <th class="align-middle w-3/12">Type</th>
-                        <th class="align-middle w-9/12">Eksempel</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr class="table-row">
-                        <td class="align-middle">
-                            <pre><code>x-pagination</code></pre>
-                        </td>
-                        <td class="align-middle">
-                            <x-pagination/>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </x-examples.card>
+        <x-examples.card.border>
+            <x-examples.card.body>
+                <div class="grid gap-2">
+                    <h3>Eksempler</h3>
+                    <table class="table table-default table-border table-compact">
+                        <thead>
+                        <tr class="table-row">
+                            <th class="align-middle w-3/12">Type</th>
+                            <th class="align-middle w-9/12">Eksempel</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="table-row">
+                            <td class="align-middle">
+                                x-pagination
+                            </td>
+                            <td class="align-middle">
+                                <x-examples.pagination/>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </x-examples.card.body>
+            <x-examples.card.footer class="bg-dark">
+                <pre><code
+                        class="language-html code-block">{{ html_entity_decode(view('code-blocks.pagination')->render()) }}</code></pre>
+            </x-examples.card.footer>
+        </x-examples.card.border>
     </div>
 </x-layout>
