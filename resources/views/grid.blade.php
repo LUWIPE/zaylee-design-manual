@@ -51,70 +51,74 @@
                 </div>
             </x-examples.card>
         </div>
-        <x-examples.card>
-            <div class="grid gap-2">
-                <h3>grid-cols-</h3>
-                <table class="table table-fixed table-default table-border table-compact w-full">
-                    <thead>
-                    <tr>
-                        <th class="w-1/5">Kode</th>
-                        <th>Eksempel</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    @for ($columns = 1; $columns <= 12; $columns++)
+        <x-examples.card.border>
+            <x-examples.card.body>
+                <div class="grid gap-2">
+                    <h3>grid-cols-</h3>
+                    <table class="table table-fixed table-default table-border table-compact w-full">
+                        <thead>
                         <tr>
-                            <td>
-                                <pre><code>grid-cols-{{ $columns }}</code></pre>
-                            </td>
-                            <td>
-                                <div class="grid grid-cols-{{ $columns }} gap-4">
-                                    @for ($i = 0; $i < $columns; $i++)
-                                        <div class="bg-black">
-                                            <br>
-                                        </div>
-                                    @endfor
-                                </div>
-                            </td>
+                            <th class="w-1/5">Kode</th>
+                            <th>Eksempel</th>
                         </tr>
-                    @endfor
-                    </tbody>
-                </table>
-            </div>
-        </x-examples.card>
-        <x-examples.card>
-            <div class="grid gap-2">
-                <h3>col-span-</h3>
-                <table class="table table-fixed table-default table-border table-compact w-full">
-                    <thead>
-                    <tr>
-                        <th class="w-1/5">Kode</th>
-                        <th>Eksempel</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    @for ($span = 1; $span <= 12; $span++)
-                        <tr>
-                            <td>
-                                <pre><code>col-span-{{ $span }}</code></pre>
-                            </td>
-                            <td>
-                                <div class="grid grid-cols-12 gap-4">
-                                    <div class="bg-black col-span-{{ $span }}">
-                                        <br>
+                        </thead>
+                        <tbody>
+                        @for ($columns = 1; $columns <= 12; $columns++)
+                            <tr>
+                                <td>
+                                    grid-cols-{{ $columns }}
+                                </td>
+                                <td>
+                                    <div class="grid grid-cols-{{ $columns }} gap-4">
+                                        @for ($i = 0; $i < $columns; $i++)
+                                            <div class="bg-black">
+                                                <br>
+                                            </div>
+                                        @endfor
                                     </div>
-                                    @for ($i = 1; $i <= 12 - $span; $i++)
-                                        <div class="border border-black">
+                                </td>
+                            </tr>
+                        @endfor
+                        </tbody>
+                    </table>
+                </div>
+            </x-examples.card.body>
+        </x-examples.card.border>
+        <x-examples.card.border>
+            <x-examples.card.body>
+                <div class="grid gap-2">
+                    <h3>col-span-</h3>
+                    <table class="table table-fixed table-default table-border table-compact w-full">
+                        <thead>
+                        <tr>
+                            <th class="w-1/5">Kode</th>
+                            <th>Eksempel</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        @for ($span = 1; $span <= 12; $span++)
+                            <tr>
+                                <td>
+                                    col-span-{{ $span }}
+                                </td>
+                                <td>
+                                    <div class="grid grid-cols-12 gap-4">
+                                        <div class="bg-black col-span-{{ $span }}">
                                             <br>
                                         </div>
-                                    @endfor
-                                </div>
-                            </td>
-                        </tr>
-                    @endfor
-                    </tbody>
-                </table>
-            </div>
-        </x-examples.card>
+                                        @for ($i = 1; $i <= 12 - $span; $i++)
+                                            <div class="border border-black">
+                                                <br>
+                                            </div>
+                                        @endfor
+                                    </div>
+                                </td>
+                            </tr>
+                        @endfor
+                        </tbody>
+                    </table>
+                </div>
+            </x-examples.card.body>
+        </x-examples.card.border>
     </div>
 </x-layout>
