@@ -68,10 +68,10 @@
                     @foreach($messages as $message)
                         <tr class="table-row">
                             <td class="align-middle w-2/12">
-                                <pre><code>{{ $message }}</code></pre>
+                                {{ $message }}
                             </td>
                             <td class="align-middle w-9/12">
-                                <x-examples.pop-ups.messages :message="$message"/>
+                                <x-examples.pop-ups.messages :message="$message" text="{{ $message }}-besked"/>
                             </td>
                             <td class="align-middle w-1/12">
                                 <x-examples.buttons.filled
@@ -85,6 +85,9 @@
                     </tbody>
                 </table>
             </x-examples.card.body>
+            <x-examples.card.footer class="bg-dark">
+                <pre><code class="language-html code-block">{{ html_entity_decode(view('code-blocks.messages')->render()) }}</code></pre>
+            </x-examples.card.footer>
         </x-examples.card.border>
         <x-examples.card.border>
             <x-examples.card.body>
