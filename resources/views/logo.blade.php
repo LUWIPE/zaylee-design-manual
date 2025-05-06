@@ -50,52 +50,95 @@
                 </div>
             </x-examples.card>
         </div>
-        <x-examples.card>
-            <div class="grid gap-2">
+        <x-examples.card.border>
+            <x-examples.card.body>
                 <h3>Logo</h3>
                 <div class="grid grid-cols-3 gap-4">
-                    <div class="border border-black p-4">
-                        <img src="{{ asset('images/logos/primary-secondary.svg') }}" alt="Primær Logo">
+                    <div>
+                        <div class="border border-black p-4">
+                            <img src="{{ asset('images/logos/primary-secondary.svg') }}" alt="logos/primary-secondary.svg">
+                        </div>
+                        <p class="text-center">logos/primary-secondary.svg</p>
                     </div>
-                    <div class="bg-secondary p-4">
-                        <img src="{{ asset('images/logos/primary-white.svg') }}" alt="Primær Logo">
+                    <div>
+                        <div class="bg-secondary p-4">
+                            <img src="{{ asset('images/logos/primary-white.svg') }}" alt="logos/primary-white.svg">
+                        </div>
+                        <p class="text-center">logos/primary-white.svg</p>
                     </div>
-                    <div class="bg-primary p-4">
-                        <img src="{{ asset('images/logos/secondary-white.svg') }}" alt="Primær Logo">
+                    <div>
+                        <div class="bg-primary p-4">
+                            <img src="{{ asset('images/logos/secondary-white.svg') }}" alt="logos/secondary-white.svg">
+                        </div>
+                        <p class="text-center">logos/secondary-white.svg</p>
                     </div>
-                    <div class="bg-black p-4">
-                        <img src="{{ asset('images/logos/white.svg') }}" alt="Primær Logo">
+                    <div>
+                        <div class="bg-black p-4">
+                            <img src="{{ asset('images/logos/white.svg') }}" alt="logos/white.svg">
+                        </div>
+                        <p class="text-center">logos/white.svg</p>
                     </div>
-                    <div class="bg-secondary p-4">
-                        <img src="{{ asset('images/logos/primary.svg') }}" alt="Primær Logo">
+                    <div>
+                        <div class="bg-secondary p-4">
+                            <img src="{{ asset('images/logos/primary.svg') }}" alt="logos/primary.svg">
+                        </div>
+                        <p class="text-center">logos/primary.svg</p>
                     </div>
-                    <div class="bg-primary p-4">
-                        <img src="{{ asset('images/logos/secondary.svg') }}" alt="Primær Logo">
-                    </div>
-                </div>
-            </div>
-        </x-examples.card>
-        <x-examples.card>
-            <div class="grid gap-2">
-                <h3>Logo-ikon</h3>
-                <div class="grid grid-cols-5 gap-4">
-                    <div class="border border-black p-4 flex justify-center">
-                        <img src="{{ asset('images/icons/primary-secondary.svg') }}" alt="Primær Logo">
-                    </div>
-                    <div class="border border-black p-4 flex justify-center">
-                        <img src="{{ asset('images/icons/secondary-primary.svg') }}" alt="Primær Logo">
-                    </div>
-                    <div class="bg-secondary p-4 flex justify-center">
-                        <img src="{{ asset('images/icons/primary.svg') }}" alt="Primær Logo">
-                    </div>
-                    <div class="bg-primary p-4 flex justify-center">
-                        <img src="{{ asset('images/icons/secondary.svg') }}" alt="Primær Logo">
-                    </div>
-                    <div class="bg-black p-4 flex justify-center">
-                        <img src="{{ asset('images/icons/white.svg') }}" alt="Primær Logo">
+                    <div>
+                        <div class="bg-primary p-4">
+                            <img src="{{ asset('images/logos/secondary.svg') }}" alt="logos/secondary.svg">
+                        </div>
+                        <p class="text-center">logos/secondary.svg</p>
                     </div>
                 </div>
-            </div>
-        </x-examples.card>
+            </x-examples.card.body>
+            <x-examples.card.footer class="bg-dark">
+                <pre><code
+                        class="language-html code-block">{{ html_entity_decode(view('code-blocks.logo')->render()) }}</code></pre>
+            </x-examples.card.footer>
+        </x-examples.card.border>
+        <x-examples.card.border>
+            <x-examples.card.body>
+                <div class="grid gap-2">
+                    <h3>Logo-ikon</h3>
+                    <div class="grid grid-cols-5 gap-4">
+                        <div>
+                            <div class="border border-black p-4 flex justify-center">
+                                <img src="{{ asset('images/logo-icons/primary-secondary.svg') }}" alt="logo-icons/primary-secondary.svg">
+                            </div>
+                            <p class="text-center">logo-icons/primary-secondary.svg</p>
+                        </div>
+                        <div>
+                            <div class="border border-black p-4 flex justify-center">
+                                <img src="{{ asset('images/logo-icons/secondary-primary.svg') }}" alt="logo-icons/secondary-primary.svg">
+                            </div>
+                            <p class="text-center">logo-icons/secondary-primary.svg</p>
+                        </div>
+                        <div>
+                            <div class="bg-secondary p-4 flex justify-center">
+                                <img src="{{ asset('images/logo-icons/primary.svg') }}" alt="logo-icons/primary.svg">
+                            </div>
+                            <p class="text-center">logo-icons/primary.svg</p>
+                        </div>
+                        <div>
+                            <div class="bg-primary p-4 flex justify-center">
+                                <img src="{{ asset('images/logo-icons/secondary.svg') }}" alt="logo-icons/secondary.svg">
+                            </div>
+                            <p class="text-center">logo-icons/secondary.svg</p>
+                        </div>
+                        <div>
+                            <div class="bg-black p-4 flex justify-center">
+                                <img src="{{ asset('images/logo-icons/white.svg') }}" alt="logo-icons/white.svg">
+                            </div>
+                            <p class="text-center">logo-icons/white.svg</p>
+                        </div>
+                    </div>
+                </div>
+            </x-examples.card.body>
+            <x-examples.card.footer class="bg-dark">
+                <pre><code
+                        class="language-html code-block">{{ html_entity_decode(view('code-blocks.logo-icon')->render()) }}</code></pre>
+            </x-examples.card.footer>
+        </x-examples.card.border>
     </div>
 </x-layout>
