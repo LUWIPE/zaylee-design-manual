@@ -17,6 +17,12 @@
             ],
         ],
     ];
+
+    $ths = ['th 1', 'th 2', 'th 3', 'th 4'];
+    $tds = [
+        ['td 1', 'td 2', 'td 3', 'td 4'],
+        ['td 1', 'td 2', 'td 3', 'td 4'],
+    ];
 @endphp
 <x-layout>
     <div class="grid gap-4">
@@ -65,44 +71,49 @@
                 </x-examples.card.body>
             </x-examples.card.border>
         </div>
-        <x-examples.card>
-            <div class="grid gap-2">
-                <h3>Eksempler</h3>
-                <table class="table table-default table-border table-compact">
-                    <thead>
-                    <tr class="table-row">
-                        <th class="align-middle w-3/12">Type</th>
-                        <th class="align-middle w-9/12">Eksempel</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr class="table-row">
-                        <td class="align-middle">
-                            <pre><code><<span>x-lists.simple</span>/></code></pre>
-                        </td>
-                        <td>
-                            <x-examples.lists.simple/>
-                        </td>
-                    </tr>
-                    <tr class="table-row">
-                        <td class="align-middle">
-                            <pre><code><<span>x-lists.heading</span>/></code></pre>
-                        </td>
-                        <td>
-                            <x-examples.lists.heading/>
-                        </td>
-                    </tr>
-                    <tr class="table-row">
-                        <td class="align-middle">
-                            <pre><code><<span>x-lists.tabs</span>/></code></pre>
-                        </td>
-                        <td>
-                            <x-examples.lists.tabs :$tabs/>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </x-examples.card>
+        <x-examples.card.border>
+            <x-examples.card.body>
+                <div class="grid gap-2">
+                    <h3>Eksempler</h3>
+                    <table class="table table-default table-border table-compact">
+                        <thead>
+                        <tr class="table-row">
+                            <th class="align-middle w-3/12">Type</th>
+                            <th class="align-middle w-9/12">Eksempel</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="table-row">
+                            <td class="align-middle">
+                                <<span>x-lists.simple</span>/>
+                            </td>
+                            <td>
+                                <x-examples.lists.simple :$ths :$tds/>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="align-middle">
+                                <<span>x-lists.heading</span>/>
+                            </td>
+                            <td>
+                                <x-examples.lists.heading :$ths :$tds/>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="align-middle">
+                                <<span>x-lists.tabs</span>/>
+                            </td>
+                            <td>
+                                <x-examples.lists.tabs :$tabs/>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </x-examples.card.body>
+            <x-examples.card.footer class="bg-dark">
+                <pre><code class="language-html code-block">{{ html_entity_decode(view('code-blocks.lists')->render()) }}</code></pre>
+            </x-examples.card.footer>
+        </x-examples.card.border>
     </div>
 </x-layout>
