@@ -9,7 +9,7 @@
     class="fixed inset-0 bg-black bg-opacity-50 z-40"
     x-cloak
     @click="slideWithBackdrop = false"
-></div>
+/>
 <div
     x-show="slideWithBackdrop"
     x-transition:enter="transition duration-300"
@@ -22,10 +22,14 @@
     x-cloak
 >
     <div class="p-6 flex justify-between items-center border-b shrink-0">
-        <h2 class="text-lg font-semibold">Slide-in</h2>
-        <button @click="slideWithBackdrop = false" class="text-xl text-gray-500 hover:text-gray-700">&times;</button>
+        <h2 class="text-lg font-semibold">{{ $heading }}</h2>
+        <button @click="slideWithoutBackdrop = false" class="text-xl text-gray-500 hover:text-gray-700">
+            <div class="table-icon">
+                <x-examples.icons.close/>
+            </div>
+        </button>
     </div>
     <div class="flex-1 overflow-y-auto p-6">
-        <p>Her er indholdet i slide-in.</p>
+        {{ $text ?? $slot }}
     </div>
 </div>
