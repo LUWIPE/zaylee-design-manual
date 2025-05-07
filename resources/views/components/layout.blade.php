@@ -38,8 +38,16 @@
                                 </div>
                             </div>
                         </div>
-                        <x-examples.slide-ins.no-backdrop :open-ref="'slideWithoutBackdrop'"/>
-                        <x-examples.slide-ins.backdrop :open-ref="'slideWithBackdrop'"/>
+                        <x-examples.slide-ins.no-backdrop
+                            :open-ref="'slideWithoutBackdrop'"
+                            heading="Slide-in uden backdrop"
+                            text="Her er indholdet i slide-in."
+                        />
+                        <x-examples.slide-ins.backdrop
+                            :open-ref="'slideWithBackdrop'"
+                            heading="Slide-in med backdrop"
+                            text="Her er indholdet i slide-in."
+                        />
                         <div class="absolute bottom-10 right-10 flex flex-col gap-2 items-end">
                             <template x-for="message in messages" :key="message.id">
                                 <div

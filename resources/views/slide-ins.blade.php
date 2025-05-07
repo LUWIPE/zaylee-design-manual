@@ -55,7 +55,7 @@
                     <tbody>
                     <tr class="table-row">
                         <td class="align-middle">
-                            <pre><code><<span>x-slide-ins.no-backdrop</span>/></code></pre>
+                            <<span>x-slide-ins.no-backdrop</span>/>
                         </td>
                         <td>
                             <x-examples.buttons.filled
@@ -67,12 +67,12 @@
                     </tr>
                     <tr class="table-row">
                         <td class="align-middle">
-                            <pre><code><<span>x-slide-ins.backdrop</span>/></code></pre>
+                            <<span>x-slide-ins.backdrop</span>/>
                         </td>
                         <td>
                             <x-examples.buttons.filled
                                 text="Åbn Slide-in med Backdrop"
-                                color="secondary"
+                                color="primary"
                                 @click="slideWithBackdrop = true;"
                             />
                         </td>
@@ -80,6 +80,9 @@
                     </tbody>
                 </table>
             </x-examples.card.body>
+            <x-examples.card.footer class="bg-dark">
+                <pre><code class="language-html code-block">{{ html_entity_decode(view('code-blocks.slide-ins')->render()) }}</code></pre>
+            </x-examples.card.footer>
         </x-examples.card.border>
     </div>
 </x-layout>
