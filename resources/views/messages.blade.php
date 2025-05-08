@@ -71,13 +71,13 @@
                                 {{ $message }}
                             </td>
                             <td class="align-middle w-9/12">
-                                <x-examples.pop-ups.messages :message="$message" text="{{ $message }}-besked"/>
+                                <x-examples.pop-ups.messages :$message text="{{ $message }}-besked"/>
                             </td>
                             <td class="align-middle w-1/12">
                                 <x-examples.buttons.filled
                                     text="Vis"
                                     :color="$message"
-                                    @click="show('{{ $message }}')"
+                                    x-on:click="show('{{ $message }}')"
                                 />
                             </td>
                         </tr>
@@ -96,8 +96,8 @@
                     <table class="table table-default table-border table-compact">
                         <thead>
                         <tr class="table-row">
-                            <th>Type</th>
-                            <th colspan="2">Eksempel</th>
+                            <th><p>Type</p></th>
+                            <th colspan="2"><p>Eksempel</p></th>
                         </tr>
                         </thead>
                         <tbody>
@@ -113,7 +113,7 @@
                         @foreach($messages as $message)
                             <tr class="table-row">
                                 <td class="align-middle w-2/12">
-                                    <pre><code>{{ $message }}</code></pre>
+                                    {{ $message }}
                                 </td>
                                 <td class="align-middle w-9/12">
                                     <x-examples.fields.input label="Test" name="test"/>

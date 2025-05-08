@@ -56,7 +56,7 @@
         <x-examples.card>
             <div class="grid gap-2">
                 <h3>Eksempler</h3>
-                <div class="grid grid-cols-8 gap-4 items-center justify-center">
+                <div class="grid grid-cols-5 gap-4 items-center justify-center">
                     @php
                         $icons = File::files(resource_path('views/components/examples/icons'));
                     @endphp
@@ -71,7 +71,7 @@
                                 <x-dynamic-component :component="'examples.icons.' . $iconName"/>
                             </div>
                             <div>
-                                <pre><p><<code class="text-center text-xs">x-icons.{{ $iconName }}</code>/></p></pre>
+                                <p class="text-xs text-center text-nowrap"><<span>x-icons.{{ $iconName }}</span>/></p>
                             </div>
                         </div>
                     @endforeach

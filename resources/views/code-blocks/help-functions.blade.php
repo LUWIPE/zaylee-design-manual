@@ -23,7 +23,8 @@ komponent:
     &lt;button
         @mouseenter="clearTimeout(t); t = setTimeout(() => show = true, 100)"
         @mouseleave="clearTimeout(t); t = setTimeout(() => show = false, 100)"
-        class="bg-info bg-opacity-15 border border-info p-1 rounded-full help-function-icon text-info flex justify-center items-center"
+        class="bg-info bg-opacity-15 border border-info p-1 rounded-full
+                help-function-icon text-info flex justify-center items-center"
     >
         &lt;x-examples.icons.questionmark/>
     &lt;/button>
@@ -50,6 +51,9 @@ komponent:
 &lt;/div>
 
 brug af komponent:
-&lt;x-examples.help-functions.tooltip text="Dette er en hjælpende tekst, der forklarer funktionen. Den vises ved hover og forsvinder igen."/>
+&lt;x-examples.help-functions.tooltip
+    text="Dette er en hjælpende tekst, der forklarer funktionen.
+        Den vises ved hover og forsvinder igen."
+/>
 
 

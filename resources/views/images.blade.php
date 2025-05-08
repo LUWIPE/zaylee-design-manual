@@ -55,24 +55,24 @@
                 <table class="table table-default table-border table-compact">
                     <thead>
                     <tr class="table-row">
-                        <th>Type</th>
+                        <th><p>Type</p></th>
                         <th>
-                            <pre><code>avatar-normal</code></pre>
+                            <p>avatar-normal</p>
                         </th>
                         <th>
-                            <pre><code>avatar-xl</code></pre>
+                            <p>avatar-xl</p>
                         </th>
                         <th>
-                            <pre><code>avatar-lg</code></pre>
+                            <p>avatar-lg</p>
                         </th>
                         <th>
-                            <pre><code>avatar-md</code></pre>
+                            <p>avatar-md</p>
                         </th>
                         <th>
-                            <pre><code>avatar-sm</code></pre>
+                            <p>avatar-sm</p>
                         </th>
                         <th>
-                            <pre><code>avatar-xs</code></pre>
+                            <p>avatar-xs</p>
                         </th>
                     </tr>
                     </thead>

@@ -6,7 +6,7 @@
     x-transition:leave="transition duration-300"
     x-transition:leave-start="translate-x-0 opacity-100"
     x-transition:leave-end="translate-x-full opacity-0"
-    class="w-96 bg-gray-50 border-l flex flex-col overflow-hidden"
+    class="w-96 bg-gray-50 border-l flex flex-col overflow-hidden "
     x-cloak
 >
     <div class="p-6 flex justify-between items-center border-b shrink-0">

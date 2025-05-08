@@ -51,14 +51,14 @@
                 <table class="table table-default table-border table-compact">
                     <thead>
                     <tr class="table-row">
-                        <th class="align-middle w-3/12">Type</th>
-                        <th class="align-middle w-9/12">Eksempel</th>
+                        <th class="align-middle w-3/12"><p>Type</p></th>
+                        <th class="align-middle w-9/12"><p>Eksempel</p></th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr class="table-row">
                         <td>
-                            <pre><code>hover:underline</code></pre>
+                            hover:underline
                         </td>
                         <td>
                             <a href="#" class="hover:underline">Link</a>
@@ -66,7 +66,7 @@
                     </tr>
                     <tr class="table-row">
                         <td>
-                            <pre><code>hover:text-primary</code></pre>
+                            hover:text-primary
                         </td>
                         <td>
                             <a href="#" class="hover:text-primary">Link</a>
