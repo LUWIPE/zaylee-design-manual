@@ -18,8 +18,9 @@
             }, 3000);
         }
     }"
+    {{--x-effect="console.log(messages)"--}}
     data-current-page="{{ Route::currentRouteName() }}"
-    class="h-screen"
+    class="overflow-y-auto"
 >
 <div class="app-layout-frameless-side flex flex-auto flex-col bg-dark h-full">
     <div class="flex flex-auto min-w-0 h-full">
@@ -49,7 +50,7 @@
                             text="Her er indholdet i slide-in."
                         />
                         <div class="absolute bottom-10 right-10 flex flex-col gap-2 items-end">
-                            <template x-for="message in messages" :key="message.id">
+                            <template x-for="message in messages" x-bind:key="message.id">
                                 <div
                                     x-transition:enter="transition ease-out duration-300"
                                     x-transition:enter-start="opacity-0 translate-y-2"

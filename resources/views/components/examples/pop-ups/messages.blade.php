@@ -1,3 +1,4 @@
+@props(['message'])
 @php
     $iconComponent = "examples.icons.messages.$message";
 @endphp
