@@ -41,24 +41,11 @@
                 </div>
             </x-examples.card>
         </div>
-        <x-examples.card>
-            <div class="grid gap-2">
-                <div class="grid gap-2">
-                    <h3>Header</h3>
-                </div>
-            </div>
-        </x-examples.card>
-        <x-examples.card>
-            <div class="grid gap-2">
-                <div class="grid gap-2">
-                    <h3>Sidenav</h3>
-                </div>
-            </div>
-        </x-examples.card>
-        <x-examples.card>
-            <div class="grid gap-2">
-                <h3>Sidenav</h3>
-            </div>
-        </x-examples.card>
+        <x-examples.card.border>
+            <x-examples.card.body>
+                <h3>Eksempel</h3>
+                <a class="hover:underline" href="/layout-example">Eksempel på layout</a>
+            </x-examples.card.body>
+        </x-examples.card.border>
     </div>
 </x-layout>
