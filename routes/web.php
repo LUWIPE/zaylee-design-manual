@@ -30,6 +30,10 @@ Route::get('/layout', function () {
     return view('layout');
 });
 
+Route::get('/layout-example', function () {
+    return view('layout-example');
+});
+
 Route::get('/grid', function () {
     return view('grid');
 });

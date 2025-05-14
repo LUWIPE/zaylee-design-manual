@@ -78,6 +78,46 @@
 }
 
 /* Icons */
+.icon-xs{
+    stroke: currentColor;
+    fill: currentColor;
+    stroke-width: 2;
+    height: 1rem;
+    width: 1rem;
+}
+
+.icon-sm{
+    stroke: currentColor;
+    fill: currentColor;
+    stroke-width: 2;
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icon-md{
+    stroke: currentColor;
+    fill: currentColor;
+    stroke-width: 2;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.icon-lg{
+    stroke: currentColor;
+    fill: currentColor;
+    stroke-width: 2;
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+.icon-xl{
+    stroke: currentColor;
+    fill: currentColor;
+    stroke-width: 2;
+    height: 2rem;
+    width: 2rem;
+}
+
 .example-icon{
     stroke: var(--dark);
     fill: var(--dark);
