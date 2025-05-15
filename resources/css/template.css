@@ -1450,7 +1450,7 @@
     -moz-column-gap: 0.5rem;
     column-gap: 0.5rem;
     white-space: nowrap;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
     font-weight: 600;

@@ -1,9 +1,9 @@
 <div class="h-12 flex items-center w-full">
-    <p class="text-xs font-medium text-gray-300">
+    <div class="flex gap-1 text-xs font-medium text-gray-300">
         <a class="hover:underline" href="#">Breadcrumb</a>
-        <i class="fa-solid fa-chevron-right text-xs mx-1"></i>
+        <div class="icon-xs"><x-examples.icons.chevron-right/></div>
         <a class="hover:underline" href="#">Breadcrumb</a>
-        <i class="fa-solid fa-chevron-right text-xs mx-1"></i>
-        <a class="hover:underline" href="#">Breadcrumb</a>
-    </p>
+        <div class="icon-xs"><x-examples.icons.chevron-right/></div>
+        <p class="text-xs font-bold text-white">Breadcrumb</p>
+    </div>
 </div>
