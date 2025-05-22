@@ -25,12 +25,16 @@
                         Headeren er placeret øverst på skærmen og fungerer som en global navigationsbar med fokus på
                         profilspecifik funktionalitet. Den indeholder brugerrelaterede elementer som profilinfo,
                         indstillinger og logout, og adskiller sig dermed fra den generelle navigation i sidenav.
+                        I headeren finder man også 'Breadcrumbs', som giver brugeren en oversigt over hvor de er i
+                        applikationen. Samt toggleknappen, som giver brugeren mulighed for at vise hele sidenaven.
                     </p>
                     <p>
                         <span class="font-bold">Sidenav:</span>
                         Sidenaven er placeret i venstre side og giver brugeren adgang til de vigtigste sektioner og
                         funktioner. Den indeholder navigationslinks og ikoner, hvilket gør det nemt at organisere og
-                        tilgå indhold hurtigt uden at forlade den aktuelle side.
+                        tilgå indhold hurtigt uden at forlade den aktuelle side. Øverst i sidenaven er en
+                        virksomhedsmenu som kan foldes ud ved at klikke på den. Den indeholder navigationslinks til de
+                        sektioner i applikationen der ikke skal være generelt tilgængelige.
                     </p>
                     <p>
                         <span class="font-bold">Content</span>
