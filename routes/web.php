@@ -54,6 +54,10 @@ Route::get('/help-functions', function () {
     return view('help-functions');
 });
 
+Route::get('/filters', function () {
+    return view('filters');
+});
+
 Route::get('/slide-ins', function () {
     return view('slide-ins');
 });

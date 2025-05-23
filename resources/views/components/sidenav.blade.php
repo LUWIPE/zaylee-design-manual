@@ -81,6 +81,11 @@
                     <p class="side-nav-text">Slide-ins</p>
                 </a>
             </li>
+            <li id="slide-ins" class="menu-item menu-item-hoverable px-0 h-10 mb-2 side-nav-item">
+                <a class="flex w-full px-2 gap-2 items-center  side-nav-list" href="/filters">
+                    <p class="side-nav-text">Filtre</p>
+                </a>
+            </li>
             <li id="cards" class="menu-item menu-item-hoverable px-0 h-10 mb-2 side-nav-item">
                 <a class="flex w-full px-2 gap-2 items-center  side-nav-list" href="/cards">
                     <p class="side-nav-text">Cards</p>
