@@ -1,7 +1,7 @@
 <x-layout>
     <div class="grid gap-4">
         <div>
-            <h1>Grid</h1>
+            <h1>Filtre</h1>
         </div>
         <div class="grid grid-cols-3 gap-4">
             <x-examples.card>
@@ -32,7 +32,7 @@
         <x-examples.card.border>
             <x-examples.card.body>
                 <div class="grid gap-2">
-                    <h3>grid-cols-</h3>
+                    <h3>Eksempler</h3>
                     <table class="table table-fixed table-default table-border table-compact w-full">
                         <thead>
                         <tr>

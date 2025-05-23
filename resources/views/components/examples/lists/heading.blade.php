@@ -6,7 +6,7 @@
                 <div class="col-span-1">
                     <div class="tab-list">
                         <p class="tab-list-item active">
-                               <span class="tab-nav tab-nav-underline text-info border-info">
+                               <span class="tab-nav tab-nav-underline text-primary border-primary">
                                    Overskrift
                                </span>
                         </p>
@@ -27,7 +27,7 @@
                         </thead>
                         <tbody>
                         @foreach($tds as $row)
-                            <tr class="table-row odd:bg-gray-50">
+                            <tr class="table-row border-b border-gray-100 h-14">
                                 @foreach($row as $td)
                                     <td class="align-middle">{{ $td }}</td>
                                 @endforeach

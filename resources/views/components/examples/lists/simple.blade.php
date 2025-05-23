@@ -13,7 +13,7 @@
                     </thead>
                     <tbody>
                     @foreach($tds as $row)
-                        <tr class="table-row odd:bg-gray-50">
+                        <tr class="table-row border-b border-gray-100 h-14">
                             @foreach($row as $td)
                                 <td class="align-middle">{{ $td }}</td>
                             @endforeach
