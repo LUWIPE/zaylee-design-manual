@@ -37,8 +37,6 @@
             </div>
             <x-examples.slide-ins.backdrop
                 x-bind:open-ref="'slideWithBackdrop'"
-                heading="Slide-in med backdrop"
-                text="Her er indholdet i slide-in."
             />
             <div class="absolute bottom-10 right-10 flex flex-col gap-2 items-end">
                 <template x-for="message in messages" x-bind:key="message.id">
