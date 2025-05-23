@@ -127,7 +127,7 @@
                                     <x-examples.buttons.filled
                                         text="Submit"
                                         :color="$message"
-                                        @click="activeMessage = '{{ $message }}'"
+                                        x-on:click="activeMessage = '{{ $message }}'"
                                     />
                                 </td>
                             </tr>

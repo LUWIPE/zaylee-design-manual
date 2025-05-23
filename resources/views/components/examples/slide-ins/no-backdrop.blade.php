@@ -11,7 +11,7 @@
 >
     <div class="p-6 flex justify-between items-center border-b shrink-0">
         <h2 class="text-lg font-semibold">{{ $heading }}</h2>
-        <button @click="slideWithoutBackdrop = false" class="text-xl text-gray-500 hover:text-gray-700">
+        <button x-on:click="slideWithoutBackdrop = false" class="text-xl text-gray-500 hover:text-gray-700">
             <div class="table-icon"><x-examples.icons.close/></div>
         </button>
     </div>

@@ -17,6 +17,18 @@ export default () => {
         slideWithoutBackdrop: false,
         slideWithBackdrop: false,
 
+        slideStack: [],
+        openSlide(slide) {
+            this.slideStack.push(slide);
+        },
+        closeSlide(index = null) {
+            if (index === null || index === this.slideStack.length - 1) {
+                this.slideStack.pop();
+            } else {
+                this.slideStack.splice(index, 1);
+            }
+        },
+
         //Messages
         messages: [],
         show(type) {

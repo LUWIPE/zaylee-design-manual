@@ -3,22 +3,7 @@
 <html lang="da" dir="ltr" class="light custom-scrollbar-black">
 <x-head/>
 <body
-    x-data="{
-        slideWithoutBackdrop: false,
-        slideWithBackdrop: false,
-        messages: [],
-        show(type) {
-            const id = Date.now() + Math.random();
-            if (this.messages.length >= 5) {
-            this.messages.shift();
-            }
-            this.messages.push({ id, type });
-            setTimeout(() => {
-                this.messages = this.messages.filter(m => m.id !== id);
-            }, 3000);
-        }
-    }"
-    {{--x-effect="console.log(messages)"--}}
+    x-data="layoutPage"
     data-current-page="{{ Route::currentRouteName() }}"
     class="overflow-y-auto"
 >
@@ -40,14 +25,12 @@
                             </div>
                         </div>
                         <x-examples.slide-ins.no-backdrop
-                            :open-ref="'slideWithoutBackdrop'"
+                            x-bind:open-ref="'slideWithoutBackdrop'"
                             heading="Slide-in uden backdrop"
                             text="Her er indholdet i slide-in."
                         />
                         <x-examples.slide-ins.backdrop
-                            :open-ref="'slideWithBackdrop'"
-                            heading="Slide-in med backdrop"
-                            text="Her er indholdet i slide-in."
+                            x-bind:open-ref="'slideWithBackdrop'"
                         />
                         <div class="absolute bottom-10 right-10 flex flex-col gap-2 items-end">
                             <template x-for="message in messages" x-bind:key="message.id">

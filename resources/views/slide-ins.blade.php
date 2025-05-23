@@ -21,7 +21,9 @@
                         Slide-ins gør det muligt at interagere med ekstra indhold som formularer, detaljer, beskeder
                         eller redigeringsmuligheder uden at navigere væk fra den side, brugeren allerede er på.
                         Slide-ins kan åbnes og lukkes efter behov, og de er typisk koblet til specifikke handlinger som
-                        klik på en knap eller række i en tabel.
+                        klik på en knap eller række i en tabel. Slide-in med backdrop har mulighed for at blive lagt
+                        i lag ved redigering og opret, i tilfælde hvor man har relateret data som også skal
+                        redigeres/oprettes.
                     </p>
                 </x-examples.card.body>
             </x-examples.card.border>
@@ -61,7 +63,7 @@
                             <x-examples.buttons.filled
                                 text="Åbn Slide-in uden Backdrop"
                                 color="primary"
-                                @click="slideWithoutBackdrop = true;"
+                                x-on:click="slideWithoutBackdrop = true;"
                             />
                         </td>
                     </tr>
@@ -73,7 +75,7 @@
                             <x-examples.buttons.filled
                                 text="Åbn Slide-in med Backdrop"
                                 color="primary"
-                                @click="slideWithBackdrop = true;"
+                                x-on:click="openSlide({ heading: 'Slide 1', content: 'Indhold for første slide' })"
                             />
                         </td>
                     </tr>
@@ -81,7 +83,8 @@
                 </table>
             </x-examples.card.body>
             <x-examples.card.footer class="bg-dark">
-                <pre><code class="language-html code-block">{{ html_entity_decode(view('code-blocks.slide-ins')->render()) }}</code></pre>
+                <pre><code
+                        class="language-html code-block">{{ html_entity_decode(view('code-blocks.slide-ins')->render()) }}</code></pre>
             </x-examples.card.footer>
         </x-examples.card.border>
     </div>
