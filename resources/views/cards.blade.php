@@ -30,12 +30,12 @@
                 <div class="grid gap-2">
                     <p>
                         <span class="font-bold">Fleksibelt layout:</span>
-                        Brug Tailwinds <code>grid</code>og <code>grid-cols-</code>klasser til at styre kortenes bredde
+                        Brug Tailwinds <code>grid</code>- og <code>grid-cols-</code>klasser til at styre kortenes bredde
                         og responsivitet.
                     </p>
                     <p>
                         <span class="font-bold">Mellemrum:</span>
-                        Når flere cards vises sammen, anvendes <code>gap-4</code> for ensartet afstand.
+                        Når flere cards vises sammen, anvendes <code>gap-</code>klasser for ensartet afstand.
                     </p>
                     <p>
                         <span class="font-bold">Interaktiv feedback:</span>

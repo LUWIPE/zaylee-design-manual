@@ -49,115 +49,120 @@
                 </div>
             </x-examples.card>
         </div>
-        <x-examples.card>
-            <div class="grid gap-2">
-                <h3>Profilbilleder</h3>
-                <table class="table table-default table-border table-compact">
-                    <thead>
-                    <tr class="table-row">
-                        <th><p>Type</p></th>
-                        <th>
-                            <p>avatar-normal</p>
-                        </th>
-                        <th>
-                            <p>avatar-xl</p>
-                        </th>
-                        <th>
-                            <p>avatar-lg</p>
-                        </th>
-                        <th>
-                            <p>avatar-md</p>
-                        </th>
-                        <th>
-                            <p>avatar-sm</p>
-                        </th>
-                        <th>
-                            <p>avatar-xs</p>
-                        </th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr class="table-row">
-                        <td class="align-middle">Runde</td>
-                        <td class="align-top">
-                            <div class="avatar avatar-normal avatar-circle">
-                                <img class="avatar-img avatar-circle"
-                                     src="https://placehold.co/600?text=Profile\nNormal" alt="">
-                            </div>
-                        </td>
-                        <td class="align-top">
-                            <div class="avatar avatar-xl avatar-circle">
-                                <img class="avatar-img avatar-circle"
-                                     src="https://placehold.co/600?text=Profile\nExtra Large" alt="">
-                            </div>
-                        </td>
-                        <td class="align-top">
-                            <div class="avatar avatar-lg avatar-circle">
-                                <img class="avatar-img avatar-circle"
-                                     src="https://placehold.co/600?text=Profile\nLarge" alt="">
-                            </div>
-                        </td>
-                        <td class="align-top">
-                            <div class="avatar avatar-md avatar-circle">
-                                <img class="avatar-img avatar-circle"
-                                     src="https://placehold.co/600?text=Profile\nMedium" alt="">
-                            </div>
-                        </td>
-                        <td class="align-top">
-                            <div class="avatar avatar-sm avatar-circle">
-                                <img class="avatar-img avatar-circle"
-                                     src="https://placehold.co/600?text=Profile\nSmall" alt="">
-                            </div>
-                        </td>
-                        <td class="align-top">
-                            <div class="avatar avatar-xs avatar-circle">
-                                <img class="avatar-img avatar-circle"
-                                     src="https://placehold.co/600?text=Profile\nExtra Small" alt="">
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="table-row">
-                        <td class="align-middle">Firkantede</td>
-                        <td class="align-top">
-                            <div class="avatar avatar-normal">
-                                <img class="avatar-img"
-                                     src="https://placehold.co/600?text=Profile\nNormal" alt="">
-                            </div>
-                        </td>
-                        <td class="align-top">
-                            <div class="avatar avatar-xl">
-                                <img class="avatar-img"
-                                     src="https://placehold.co/600?text=Profile\nExtra Large" alt="">
-                            </div>
-                        </td>
-                        <td class="align-top">
-                            <div class="avatar avatar-lg">
-                                <img class="avatar-img"
-                                     src="https://placehold.co/600?text=Profile\nLarge" alt="">
-                            </div>
-                        </td>
-                        <td class="align-top">
-                            <div class="avatar avatar-md">
-                                <img class="avatar-img"
-                                     src="https://placehold.co/600?text=Profile\nMedium" alt="">
-                            </div>
-                        </td>
-                        <td class="align-top">
-                            <div class="avatar avatar-sm">
-                                <img class="avatar-img"
-                                     src="https://placehold.co/600?text=Profile\nSmall" alt="">
-                            </div>
-                        </td>
-                        <td class="align-top">
-                            <div class="avatar avatar-xs">
-                                <img class="avatar-img"
-                                     src="https://placehold.co/600?text=Profile\nExtra Small" alt="">
-                            </div>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </x-examples.card>
+        <x-examples.card.border>
+            <x-examples.card.body>
+                <div class="grid gap-2">
+                    <h3>Profilbilleder</h3>
+                    <table class="table table-default table-border table-compact">
+                        <thead>
+                        <tr class="table-row">
+                            <th><p>Type</p></th>
+                            <th>
+                                <p>avatar-normal</p>
+                            </th>
+                            <th>
+                                <p>avatar-xl</p>
+                            </th>
+                            <th>
+                                <p>avatar-lg</p>
+                            </th>
+                            <th>
+                                <p>avatar-md</p>
+                            </th>
+                            <th>
+                                <p>avatar-sm</p>
+                            </th>
+                            <th>
+                                <p>avatar-xs</p>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="table-row">
+                            <td class="align-middle">Runde</td>
+                            <td class="align-top">
+                                <div class="avatar avatar-normal avatar-circle">
+                                    <img class="avatar-img avatar-circle"
+                                         src="https://placehold.co/600?text=Profile\nNormal" alt="">
+                                </div>
+                            </td>
+                            <td class="align-top">
+                                <div class="avatar avatar-xl avatar-circle">
+                                    <img class="avatar-img avatar-circle"
+                                         src="https://placehold.co/600?text=Profile\nExtra Large" alt="">
+                                </div>
+                            </td>
+                            <td class="align-top">
+                                <div class="avatar avatar-lg avatar-circle">
+                                    <img class="avatar-img avatar-circle"
+                                         src="https://placehold.co/600?text=Profile\nLarge" alt="">
+                                </div>
+                            </td>
+                            <td class="align-top">
+                                <div class="avatar avatar-md avatar-circle">
+                                    <img class="avatar-img avatar-circle"
+                                         src="https://placehold.co/600?text=Profile\nMedium" alt="">
+                                </div>
+                            </td>
+                            <td class="align-top">
+                                <div class="avatar avatar-sm avatar-circle">
+                                    <img class="avatar-img avatar-circle"
+                                         src="https://placehold.co/600?text=Profile\nSmall" alt="">
+                                </div>
+                            </td>
+                            <td class="align-top">
+                                <div class="avatar avatar-xs avatar-circle">
+                                    <img class="avatar-img avatar-circle"
+                                         src="https://placehold.co/600?text=Profile\nExtra Small" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="align-middle">Firkantede</td>
+                            <td class="align-top">
+                                <div class="avatar avatar-normal">
+                                    <img class="avatar-img"
+                                         src="https://placehold.co/600?text=Profile\nNormal" alt="">
+                                </div>
+                            </td>
+                            <td class="align-top">
+                                <div class="avatar avatar-xl">
+                                    <img class="avatar-img"
+                                         src="https://placehold.co/600?text=Profile\nExtra Large" alt="">
+                                </div>
+                            </td>
+                            <td class="align-top">
+                                <div class="avatar avatar-lg">
+                                    <img class="avatar-img"
+                                         src="https://placehold.co/600?text=Profile\nLarge" alt="">
+                                </div>
+                            </td>
+                            <td class="align-top">
+                                <div class="avatar avatar-md">
+                                    <img class="avatar-img"
+                                         src="https://placehold.co/600?text=Profile\nMedium" alt="">
+                                </div>
+                            </td>
+                            <td class="align-top">
+                                <div class="avatar avatar-sm">
+                                    <img class="avatar-img"
+                                         src="https://placehold.co/600?text=Profile\nSmall" alt="">
+                                </div>
+                            </td>
+                            <td class="align-top">
+                                <div class="avatar avatar-xs">
+                                    <img class="avatar-img"
+                                         src="https://placehold.co/600?text=Profile\nExtra Small" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </x-examples.card.body>
+            <x-examples.card.footer class="bg-dark">
+                <pre><code class="language-html code-block">{{ html_entity_decode(view('code-blocks.images')->render()) }}</code></pre>
+            </x-examples.card.footer>
+        </x-examples.card.border>
     </div>
 </x-layout>

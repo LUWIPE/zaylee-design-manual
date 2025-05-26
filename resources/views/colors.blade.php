@@ -1,7 +1,7 @@
 <x-layout>
     <div class="grid gap-4">
         <div>
-            <h1 class="mt-4">Farver</h1>
+            <h1>Farver</h1>
         </div>
         <div class="grid grid-cols-3 gap-4">
             <x-examples.card>
@@ -52,7 +52,7 @@
                     og balance i designet.
                 </p>
                 <p>Systemet har 3 gennemgående baggrundsfarver:</p>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid grid-cols-3 gap-3">
                     <div class="bg-white border border-black">
                         <p class="text-black text-center p-2">white (#ffffff)</p>
                     </div>
@@ -91,7 +91,7 @@
                         sammenhæng og giver fleksibilitet, samtidig med at brandets identitet styrkes.
                     </p>
                     <p>Farvetemaet består af seks centrale farver med hver deres light- og darkversion:</p>
-                    <div class="grid grid-cols-6 gap-4">
+                    <div class="grid grid-cols-6 gap-3">
                         <div class="bg-primary border border-primary">
                             <p class="text-white text-center p-2">primary (#1b3b6f)</p>
                         </div>
@@ -112,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-6 gap-4">
+                <div class="grid grid-cols-6 gap-3">
                     <div class="bg-primary-light border border-primary-light">
                         <p class="text-black text-center p-2">primary-light (#6c85a7)</p>
                     </div>
@@ -132,7 +132,7 @@
                         <p class="text-black text-center p-2">error-light (#f7a8a0)</p>
                     </div>
                 </div>
-                <div class="grid grid-cols-6 gap-4">
+                <div class="grid grid-cols-6 gap-3">
                     <div class="bg-primary-dark border border-primary-dark">
                         <p class="text-white text-center p-2">primary-dark (#122448)</p>
                     </div>
@@ -164,7 +164,7 @@
                 <p>
                     De definerede gråtoner i systemet er:
                 </p>
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid grid-cols-3 gap-3">
                     <div class="bg-gray-50">
                         <p class="text-black text-center p-2">gray-50 (#fafafa)</p>
                     </div>

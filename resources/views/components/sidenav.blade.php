@@ -1,4 +1,4 @@
-<div id="side-nav-container" class="side-nav bg-dark pt-6 ps-2 w-44 max-h-full flex">
+<div id="side-nav-container" class="side-nav bg-dark pt-3 ps-2 w-44 max-h-full flex">
     <div>
         <a class="side-nav-header flex-col justify-center h-16">
             <div class="logo w-auto mx-2">
@@ -9,7 +9,7 @@
             </div>
         </a>
     </div>
-    <div class="m-2 mt-5 mb-10 flex justify-start max-h-full overflow-y-auto custom-scrollbar-dark">
+    <div class="mx-2 my-3 flex justify-start max-h-full overflow-y-auto custom-scrollbar-dark">
         <ul class="">
             <li id="introduction" class="menu-item menu-item-hoverable h-10 px-0 mb-2">
                 <a class="flex h-full w-full px-2 gap-2 items-center  side-nav-list" href="/">

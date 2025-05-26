@@ -10,10 +10,10 @@
 <div class="app-layout-frameless-side flex flex-auto flex-col bg-dark h-full">
     <div class="flex flex-auto min-w-0 h-full">
         <x-sidenav/>
-        <div class="min-h-screen min-w-0 relative w-full p-6">
-            <div class="bg-white flex flex-col flex-1 h-full rounded-2xl">
+        <div class="min-h-screen min-w-0 relative w-full pl-0 p-2">
+            <div class="bg-white flex flex-col flex-1 h-full rounded-sm">
                 <div class="h-full flex flex-auto flex-col">
-                    <div class="h-full flex flex-row rounded-2xl overflow-hidden">
+                    <div class="h-full flex flex-row rounded-sm overflow-hidden">
                         <div class="flex flex-col flex-1 transition-all duration-300">
                             <x-header/>
                             <div class="page-container flex-1 overflow-y-auto">

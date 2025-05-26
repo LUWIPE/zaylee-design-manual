@@ -1,6 +1,6 @@
 <header class="header dark bg-dark my-auto pr-4 fixed top-0 w-full z-30 flex">
     <div class="header-wrapper flex align-middle h-12 w-full">
-        <div class="flex items-center gap-2" x-bind:class="sideNavOpen ? 'ml-54' : 'ml-14'" x-transition>
+        <div class="flex items-center gap-2" x-bind:class="sideNavOpen ? 'ml-48' : 'ml-10'" x-transition>
             <div>
                 <ul>
                     <li class="menu-item px-0 h-8">
