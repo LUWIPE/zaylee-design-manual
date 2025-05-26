@@ -11,6 +11,11 @@
     max-height: 32rem;
 }
 
+/* Margins */
+.ml-54 {
+    margin-left: 13.5rem;
+}
+
 /* Scrollbars */
 .custom-scrollbar-dark {
     scrollbar-width: thin;
