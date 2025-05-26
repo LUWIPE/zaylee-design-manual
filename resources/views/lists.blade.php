@@ -23,6 +23,8 @@
         ['td 1', 'td 2', 'td 3', 'td 4'],
         ['td 1', 'td 2', 'td 3', 'td 4'],
     ];
+
+    $indexData = \App\TabbedIndex\Indexes\TestIndex::asArray()['indexData'];
 @endphp
 <x-layout>
     <div class="grid gap-4">
@@ -105,6 +107,14 @@
                             </td>
                             <td>
                                 <x-examples.lists.tabs :$tabs/>
+                            </td>
+                        </tr>
+                        <tr class="table-row">
+                            <td class="align-middle">
+                                <<span>x-lists.tabbed-index</span>/>
+                            </td>
+                            <td>
+                                <x-examples.lists.tabbed-index :$indexData/>
                             </td>
                         </tr>
                         </tbody>
