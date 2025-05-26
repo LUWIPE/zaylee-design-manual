@@ -179,7 +179,7 @@ Komponent
                 &lt;/div>
                 &#64;if($indexData['canCreate'])
                     &lt;a href="&#123;&#123; $indexData['getCreateUrl']() }}">
-                        &lt;x-examples.buttons.filled-sm
+                        &lt;x-buttons.filled-sm
                             color="primary"
                             text="Opret Tilbud"
                         />
@@ -226,12 +226,12 @@ Komponent
                                 >
                                     &lt;a href="#" title="Rediger">
                                         &lt;div class="hover:bg-gray-300 rounded-full p-2 table-icon">
-                                            &lt;x-examples.icons.edit/>
+                                            &lt;x-icons.edit/>
                                         &lt;/div>
                                     &lt;/a>
                                     &lt;a href="#" title="Slet">
                                         &lt;div class="hover:bg-gray-300 rounded-full p-2 table-icon">
-                                            &lt;x-examples.icons.trashcan/>
+                                            &lt;x-icons.trashcan/>
                                         &lt;/div>
                                     &lt;/a>
                                 &lt;/div>
@@ -240,7 +240,7 @@ Komponent
                     &#64;endforeach
                     &lt;/tbody>
                 &lt;/table>
-                &lt;x-examples.pagination :page="$indexData['page']" :lastPage="$indexData['lastPage']" />
+                &lt;x-pagination :page="$indexData['page']" :lastPage="$indexData['lastPage']" />
             &lt;/div>
         &lt;/div>
     &lt;/div>
